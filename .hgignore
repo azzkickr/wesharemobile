@@ -1,10 +1,10 @@
 syntax: glob
 
 build/*
+*.moved-aside
 *.DS_Store
 .DS_Store
-*.moved-aside
-lib/three20/*
+
 lib/facebook-iphone-sdk/*
 lib/MGTwitterEngine/*
 lib/mpoauthconnection/*

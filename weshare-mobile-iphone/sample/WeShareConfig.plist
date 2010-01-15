@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Plugins</key>
+	<dict>
+		<key>WSFacebookPlugin</key>
+		<dict>
+			<key>position</key>
+			<integer>1</integer>
+			<key>displayName</key>
+			<string>Facebook</string>
+			<key>apiKey</key>
+			<string>Insert your API key here.</string>
+			<key>appSecret</key>
+			<string>Insert your app secret here.</string>
+			<key>useSessionProxy</key>
+			<false/>
+			<key>attachmentTemplate</key>
+			<string>{&quot;name&quot;:&quot;WeShareDemo&quot;,&quot;href&quot;:&quot;%@&quot;,&quot;caption&quot;:&quot;%@&quot;,&quot;description&quot;:&quot;%@&quot;}</string>
+			<key>iconImageName</key>
+			<string>facebook-icon.png</string>
+		</dict>
+		<key>WSTwitterPlugin</key>
+		<dict>
+			<key>position</key>
+			<integer>2</integer>
+			<key>displayName</key>
+			<string>Twitter</string>
+			<key>iconImageName</key>
+			<string>twitter-icon.png</string>
+		</dict>
+		<key>WSEmailPlugin</key>
+		<dict>
+			<key>position</key>
+			<integer>3</integer>
+			<key>displayName</key>
+			<string>E-Mail</string>
+			<key>iconImageName</key>
+			<string>mail-icon.png</string>
+		</dict>
+		<key>WSDeliciousPlugin</key>
+		<dict>
+			<key>displayName</key>
+			<string>Delicious</string>
+			<key>iconImageName</key>
+			<string>delicious-icon.png</string>
+			<key>apiKey</key>
+			<string>Insert your API key here.</string>
+			<key>sharedSecret</key>
+			<string>Insert your shared secret here.</string>
+			<key>applicationId</key>
+			<string>Inset your application ID here.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
