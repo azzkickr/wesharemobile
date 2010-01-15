@@ -1,0 +1,13 @@
+syntax: glob
+
+build/*
+*.DS_Store
+.DS_Store
+*.moved-aside
+lib/three20/*
+lib/facebook-iphone-sdk/*
+lib/MGTwitterEngine/*
+lib/mpoauthconnection/*
+
+*.pbxuser
+*.mode1v3
