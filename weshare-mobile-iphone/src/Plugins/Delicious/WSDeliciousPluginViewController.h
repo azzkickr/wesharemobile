@@ -58,11 +58,14 @@
 	IBOutlet UILabel* usernameLabel;
 	IBOutlet UILabel* passwordLabel;
 	IBOutlet UILabel* rememberLabel;
+	
+	BOOL inputsValid;
 }
 
 @property (nonatomic, retain) WSDeliciousPlugin* plugin;
 @property (nonatomic, retain) NSURL* userAuthURL;
 @property (nonatomic, readonly) BOOL userAuthViewShown;
+@property (nonatomic, readonly) BOOL inputsValid;
 
 - (id)initWithPlugin:(WSDeliciousPlugin*)aPlugin;
 

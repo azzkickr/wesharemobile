@@ -36,6 +36,7 @@
 
 #import "WeShare.h"
 #import "UIView+FirstResponderAdditions.h"
+#import "NSString+EmptyAdditions.h"
 
 #define kWSTransitionDuration 0.3
 
@@ -45,5 +46,8 @@
 
 #define kWSSharingFailedErrorMessageKey @"WSSharingFailedErrorMessage"
 
-
+// Macro for easier i18n
 #define WSLocalizedString(theString, comment) NSLocalizedStringFromTable(theString, @"WeShare", comment)
+
+// Color macro for inputs with errors
+#define WSErrorColor() [UIColor colorWithRed: 0.875 green: 0.125 blue: 0.05 alpha: 1.0];

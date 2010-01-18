@@ -101,7 +101,10 @@
 	if (!useOAuthSwitch.on) {
 		[plugin setUsername: usernameField.text password: passwordField.text remember: rememberCredentialsSwitch.on];
 	}
-	[plugin postUrl: urlField.text withTitle: titleField.text];
+	if (self.inputsValid) {
+		[plugin postUrl: urlField.text withTitle: titleField.text];
+	}
+	pluginDialog.commitButton.enabled = self.inputsValid;
 }
 
 - (void)didDismissDialog:(WSSharePluginDialog *)dialog
@@ -168,6 +171,33 @@
 - (void)postDismissUserAuthViewController
 {
 	[userAuthViewController.view removeFromSuperview];
+}
+
+- (BOOL)inputsValid
+{
+	BOOL result = NO;
+	
+	UIColor* errorColor = WSErrorColor();
+	UIColor* normalColor = [UIColor blackColor];
+	
+	BOOL titleOK = ![titleField.text isEmpty];
+	BOOL urlOK = ![urlField.text isEmpty];
+	
+	BOOL usernameOK = YES;
+	BOOL passwordOK = YES;
+	
+	if (!useOAuthSwitch.on) {
+		usernameOK = ![[plugin username] isEmpty];
+		passwordOK = ![[plugin password] isEmpty];
+	}
+	
+	titleLabel.textColor = titleOK ? normalColor : errorColor;
+	urlLabel.textColor = urlOK ? normalColor : errorColor;
+	usernameLabel.textColor = usernameOK ? normalColor : errorColor;
+	passwordLabel.textColor = passwordOK ? normalColor : errorColor;
+		
+	result = titleOK && urlOK && usernameOK && passwordOK;
+	return result;
 }
 
 - (void)scrollToLoginInputs

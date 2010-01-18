@@ -28,7 +28,6 @@
 #import "WSTwitterPluginViewController.h"
 #import "WSTwitterPlugin.h"
 #import <QuartzCore/QuartzCore.h>
-#import "NSString+EmptyAdditions.h"
 
 #define MESSAGE_MAX_LENGTH 140
 
@@ -61,7 +60,8 @@
 	return self;
 }
 
-- (void)dealloc {
+- (void)dealloc
+{
 	[[NSNotificationCenter defaultCenter] removeObserver: self];
 	
 	[charCountItem release];
@@ -69,7 +69,8 @@
     [super dealloc];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 	
 	messageView.text = self.message;
@@ -83,8 +84,6 @@
 	usernameLabel.text = WSLocalizedString(@"Username", nil);
 	passwordLabel.text = WSLocalizedString(@"Password", nil);
 	rememberLabel.text = WSLocalizedString(@"Remember", nil);
-	
-	[self updateCommitButtonState];
 }
 
 - (void)setMessage:(NSString *)theMessage
@@ -108,8 +107,26 @@
 
 - (void)updateCommitButtonState
 {
-	BOOL enable = ![[plugin username] isEmpty] && ![[plugin password] isEmpty] && [messageView.text length] > 0;
-	pluginDialog.commitButton.enabled = enable;
+	pluginDialog.commitButton.enabled = [self inputsValid];
+}
+
+- (BOOL)inputsValid
+{
+	BOOL result = NO;
+	
+	UIColor* errorColor = WSErrorColor();
+	UIColor* normalColor = [UIColor blackColor];
+	
+	BOOL usernameOK = ![[plugin username] isEmpty];
+	BOOL passwordOK = ![[plugin password] isEmpty];
+	BOOL messageOK = [messageView.text length] > 0;
+	
+	usernameLabel.textColor = usernameOK ? normalColor : errorColor;
+	passwordLabel.textColor = passwordOK ? normalColor : errorColor;
+	messageView.layer.borderColor = messageOK ? normalColor.CGColor : errorColor.CGColor;
+	
+	result = messageOK && usernameOK && passwordOK;
+	return result;
 }
 
 - (void)updateCharCount

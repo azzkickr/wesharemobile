@@ -113,6 +113,8 @@
 		pluginDialog = [[WSSharePluginDialog alloc] initWithDelegate: pluginViewController];
 	}
 	pluginDialog.title = [NSString stringWithFormat: WSLocalizedString(@"Share with %@", nil), self.displayName];
+	
+	pluginViewController.pluginDialog = pluginDialog;
 	pluginDialog.pluginView = pluginViewController.view;
 	[pluginDialog showInView: viewController.view];
 }
@@ -134,11 +136,7 @@
 	[self.dataDict setObject: url forKey: kWSUrlDataDictKey];
 	[self.dataDict setObject: title forKey: kWSTitleDataDictKey];
 	
-	if ([url isEqualToString: @""] || [title isEqualToString: @""]) {
-		[[NSNotificationCenter defaultCenter] postNotificationName: kWSSharingFailedNotification
-															object: self
-														  userInfo: [NSDictionary dictionaryWithObject: WSLocalizedString(@"Title and URL may not be empty.", nil)
-																								forKey: kWSSharingFailedErrorMessageKey]];
+	if (!pluginViewController.inputsValid) {
 		return;
 	}
 	

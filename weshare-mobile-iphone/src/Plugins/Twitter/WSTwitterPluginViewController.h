@@ -46,10 +46,13 @@
 	IBOutlet UILabel* usernameLabel;
 	IBOutlet UILabel* passwordLabel;
 	IBOutlet UILabel* rememberLabel;
+	
+	BOOL inputsValid;
 
 }
 
 @property (nonatomic, retain) NSString* message;
+@property (nonatomic, readonly) BOOL inputsValid;
 
 - (id)initWithPlugin:(WSTwitterPlugin*)aPlugin;
 - (void)insertText:(NSString*)theText;

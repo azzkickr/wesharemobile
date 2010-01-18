@@ -172,7 +172,9 @@ typedef enum {
 
 - (void)didPressCommitInDialog:(WSSharePluginDialog*)dialog
 {	
-	[self postToTwitter: pluginViewController.message];
+	if (pluginViewController.inputsValid) {
+		[self postToTwitter: pluginViewController.message];
+	}
 }
 
 - (void)didDismissDialog:(WSSharePluginDialog *)dialog
