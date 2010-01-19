@@ -69,8 +69,7 @@
 	
 	pluginDialog = [[WSSharePluginDialog alloc] init];
 	
-	pluginDialog.hideTitleBar = YES;
-	pluginDialog.hideToolbar = YES;
+	pluginDialog.fullscreen = YES;
 	pluginDialog.delegate = self;
 	pluginDialog.pluginView = mailController.view;
 	

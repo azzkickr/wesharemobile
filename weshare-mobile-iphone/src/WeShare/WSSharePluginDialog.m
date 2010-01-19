@@ -49,7 +49,7 @@
 
 @implementation WSSharePluginDialog
 
-@synthesize pluginView, hideTitleBar, hideToolbar, autoDismiss, commitButton;
+@synthesize pluginView, fullscreen, autoDismiss, commitButton;
 
 - (id)init
 {
@@ -89,9 +89,6 @@
 	
 	backgroundView.layer.cornerRadius = 10.0;
 	
-	// Update UI
-	titleBar.hidden = self.hideTitleBar;
-	
 	titleLabel.text = self.title;
 	commitButton = [[UIBarButtonItem alloc] initWithTitle: WSLocalizedString(@"Share", @"DO NOT TRANSLATE! Share-Button-Text")
 													style: UIBarButtonItemStyleDone
@@ -102,7 +99,9 @@
 	
 	// Configure the toolbar with the default items
 	[toolbar setItems: [self toolbarItemsForSharingResult: WSSharingResultStateNone] animated: NO];
-	toolbar.hidden = self.hideToolbar;
+	
+	titleBar.hidden = self.fullscreen;
+	toolbar.hidden = self.fullscreen;
 }
 
 - (void)setPluginView:(UIView *)aView
@@ -123,15 +122,20 @@
 {
 	CGRect result = CGRectInset(self.view.bounds, kPluginViewMargin, kPluginViewMargin);
 	
-	if (!self.hideTitleBar) {
+	if (!self.fullscreen) {
 		result.origin.y = kPluginViewTopMargin;
-	}
-	
-	if (!self.hideToolbar) {
 		result.size.height -= kPluginViewBottomMargin + result.origin.y - kPluginViewMargin;
 	}
 	
 	return result;
+}
+
+- (void)setFullscreen:(BOOL)aFlag
+{
+	fullscreen = aFlag;
+	
+	titleBar.hidden = self.fullscreen;
+	toolbar.hidden = self.fullscreen;
 }
 
 #pragma mark UI actions
@@ -205,7 +209,7 @@
 		frame.origin.x += frame.size.width - CGRectGetMinX(pluginView.frame);
 		resultView.frame = frame;
 		
-		BOOL animateInToolbar = self.hideToolbar;
+		BOOL animateInToolbar = self.fullscreen;
 		
 		if (animateInToolbar) {
 			// Always show the toolbar in result screen, but move it out first

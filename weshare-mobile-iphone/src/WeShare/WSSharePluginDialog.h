@@ -41,23 +41,31 @@
 	
 	UIView* pluginView;
 	
-	BOOL hideTitleBar;	
 	/*
 	 Sets wheter to automatically dismiss the dialog when sharing has suceeded or failed.
 	 */
 	BOOL autoDismiss;
 	
+	/*
+	 If set to <tt>YES</tt>, no title- and toolbar are displayed in the plugin dialog.
+	 
+	 Note that your plugin view <b>must</b> provide buttons to commit and dismiss the dialog!
+	 
+	 Also in the fullscreen plugins, the result view ("Sharing success/fail") will be displayed 
+	 with a toolbar containg the buttons "Share again" and "Done".
+	 
+	 */
+	BOOL fullscreen;
+	
 	IBOutlet WSSharingResultView* resultView;
 	
-	BOOL hideToolbar;
 	IBOutlet UIToolbar* toolbar;
 	UIBarButtonItem* commitButton;
 }
 
 @property (nonatomic, retain) UIView* pluginView;
 
-@property (nonatomic, assign) BOOL hideTitleBar;
-@property (nonatomic, assign) BOOL hideToolbar;
+@property (nonatomic, assign) BOOL fullscreen;
 
 @property (nonatomic, readonly) UIBarButtonItem* commitButton;
 
