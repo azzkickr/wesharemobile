@@ -1,8 +1,8 @@
 /*
  
- WeShare for iPhone - A library to easily share information on various networks
+ WeShare Mobile for iPhone - A library to easily share information on various networks
  
- WeShare for iPhone - Copyright (C) 2009, Reiner Pittinger, Initiative neofonie open, 
+ WeShare Mobile for iPhone - Copyright (C) 2009, 2010 Reiner Pittinger, Initiative neofonie open, 
  neofonie Technologieentwicklung und Informationsmanagement GmbH, http://open.neofonie.de
  
  This program is free software: you can redistribute it and/or modify
