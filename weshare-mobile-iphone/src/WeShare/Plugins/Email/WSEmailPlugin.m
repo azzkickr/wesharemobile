@@ -69,7 +69,7 @@
 	
 	pluginDialog = [[WSSharePluginDialog alloc] init];
 	
-	pluginDialog.fullscreen = YES;
+	pluginDialog.fullscreenPluginView = YES;
 	pluginDialog.delegate = self;
 	pluginDialog.pluginView = mailController.view;
 	
