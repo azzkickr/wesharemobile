@@ -1,13 +1,14 @@
 /*
  
- WeShare for iPhone - a framework to distribute content over various social networks with mobile devices
+ WeShare for iPhone - A library to easily share information on various networks
  
  WeShare for iPhone - Copyright (C) 2009, Reiner Pittinger, Initiative neofonie open, 
- neofonie Technologieentwicklung und Informationsmanagement GmbH, http://open.neofonie.de
+ neofonie Technologieentwicklung und Informationsmanagement GmbH (neofonie), http://open.neofonie.de
  
- This program is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
+ neofonie provides this program under a dual license model designed to meet the development and distribution needs of both commercial distributors and open source projects.
+ 
+ For the use in open source projcts you can redistribute it and/or modify
+ this program under the terms of the GNU General Public License version 3 as published by the Free Software Foundation, either of the License, or
  (at your option) any later version.
  
  This program is distributed in the hope that it will be useful,
@@ -17,6 +18,9 @@
  
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ You may also purchase a commercial licence to use this program in non-GPL projects. Please contact open@neofonie.de for further information and assistance. Purchasing a commercial license means that the GPL does not apply, and a commercial license (neofonie Commercial Source Code License Version 1.0), NCSL v1.0 includes the assurances that distributors typically find in commercial distribution agreements.
+ 
  
  Created by Reiner Pittinger <reiner.pittinger@neofonie.de> on 25.11.09.
  
@@ -49,7 +53,7 @@
 
 @implementation WSSharePluginDialog
 
-@synthesize pluginView, fullscreen, autoDismiss, commitButton;
+@synthesize pluginView, fullscreenPluginView, autoDismiss, commitButton;
 
 - (id)init
 {
@@ -100,8 +104,8 @@
 	// Configure the toolbar with the default items
 	[toolbar setItems: [self toolbarItemsForSharingResult: WSSharingResultStateNone] animated: NO];
 	
-	titleBar.hidden = self.fullscreen;
-	toolbar.hidden = self.fullscreen;
+	titleBar.hidden = self.fullscreenPluginView;
+	toolbar.hidden = self.fullscreenPluginView;
 }
 
 - (void)setPluginView:(UIView *)aView
@@ -122,7 +126,7 @@
 {
 	CGRect result = CGRectInset(self.view.bounds, kPluginViewMargin, kPluginViewMargin);
 	
-	if (!self.fullscreen) {
+	if (!self.fullscreenPluginView) {
 		result.origin.y = kPluginViewTopMargin;
 		result.size.height -= kPluginViewBottomMargin + result.origin.y - kPluginViewMargin;
 	}
@@ -130,12 +134,12 @@
 	return result;
 }
 
-- (void)setFullscreen:(BOOL)aFlag
+- (void)setFullscreenPluginView:(BOOL)aFlag
 {
-	fullscreen = aFlag;
+	fullscreenPluginView = aFlag;
 	
-	titleBar.hidden = self.fullscreen;
-	toolbar.hidden = self.fullscreen;
+	titleBar.hidden = self.fullscreenPluginView;
+	toolbar.hidden = self.fullscreenPluginView;
 }
 
 #pragma mark UI actions
@@ -209,7 +213,7 @@
 		frame.origin.x += frame.size.width - CGRectGetMinX(pluginView.frame);
 		resultView.frame = frame;
 		
-		BOOL animateInToolbar = self.fullscreen;
+		BOOL animateInToolbar = self.fullscreenPluginView;
 		
 		if (animateInToolbar) {
 			// Always show the toolbar in result screen, but move it out first
