@@ -126,5 +126,7 @@
 
 // TODO: Implement rescan of available services (e.g. Email) when app resumes
 
++ (UIBarButtonItem*)weShareToolbarItemWithTarget:(id)aTarget action:(SEL)anAction;
+
 @end
 

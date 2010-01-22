@@ -156,6 +156,25 @@ static WSShareCenter* sharedCenter = nil;
 	}
 }
 
++ (UIBarButtonItem*)weShareToolbarItemWithTarget:(id)aTarget action:(SEL)anAction
+{
+	UIImage* backgroundImageNormal = [UIImage imageNamed: @"weshare-toolbarIcon-colored.png"];
+	UIImage* backgroundImageSelected = [UIImage imageNamed: @"weshare-toolbarIcon-colored-highlighted.png"];
+	
+	UIButton* button = [[UIButton alloc] initWithFrame: CGRectMake(0, 0, backgroundImageNormal.size.width, backgroundImageNormal.size.height)];
+	[button setTitle: @"" forState: UIControlStateNormal];
+	[button setTitle: @"" forState: UIControlStateSelected];
+	[button setTitle: @"" forState: UIControlStateHighlighted];
+	[button setBackgroundImage: backgroundImageNormal forState:UIControlStateNormal];
+	[button setBackgroundImage:backgroundImageSelected forState: UIControlStateSelected];
+	[button setBackgroundImage:backgroundImageSelected forState: UIControlStateHighlighted];
+	
+	[button addTarget: aTarget action: anAction forControlEvents:UIControlEventTouchUpInside];
+	
+	UIBarButtonItem* item = [[[UIBarButtonItem alloc] initWithCustomView: button] autorelease];
+	return item;
+}
+
 /*!
  @method     
  @abstract   Loads and processes the config file.

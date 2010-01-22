@@ -45,16 +45,15 @@
 	NSString* apiKey;
 	NSString* appSecret;
 	BOOL useSessionProxy;
-	NSString* sessionProxyUrl;
-	NSString* attachmentTemplate;
+	
+	NSURL* sessionProxyURL;
 
 }
 
 @property (nonatomic, retain) NSString *apiKey;
 @property (nonatomic, retain) NSString *appSecret;
 @property (nonatomic, assign) BOOL useSessionProxy;
-@property (nonatomic, retain) NSString *sessionProxyUrl;
-@property (nonatomic, retain) NSString* attachmentTemplate;
+@property (nonatomic, retain) NSURL *sessionProxyURL;
 
 /*!
     @function

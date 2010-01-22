@@ -42,6 +42,8 @@
 		552F694B10D15A26002143D0 /* UserAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552F694910D15A26002143D0 /* UserAuthViewController.xib */; };
 		553983AE10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 553983AD10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m */; };
 		5539883A10C7F6C100E9C0E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5539883910C7F6C100E9C0E4 /* Security.framework */; };
+		553CD7DC11074FAD00F936C3 /* weshare-toolbarIcon-colored.png in Resources */ = {isa = PBXBuildFile; fileRef = 553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */; };
+		553CDA3611085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */; };
 		554C3CF310FCBFC8006101F6 /* WSDeliciousPluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F232F210B6FFA100A3DA6B /* WSDeliciousPluginViewController.xib */; };
 		554C3D1D10FCC349006101F6 /* WSTwitterPluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5578D5A610C93CFE00E06757 /* WSTwitterPluginViewController.xib */; };
 		554C411D10FE1628006101F6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C411C10FE1628006101F6 /* line.png */; };
@@ -63,7 +65,6 @@
 		55C9927D10FE37AC0054758E /* NSString+EmptyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */; };
 		55D7930C1100AF3900174A17 /* weshare-logo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D793091100AF3900174A17 /* weshare-logo-medium.png */; };
 		55D7930D1100AF3900174A17 /* weshare-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D7930A1100AF3900174A17 /* weshare-logo-small.png */; };
-		55D7930E1100AF3900174A17 /* weshare-toolbarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D7930B1100AF3900174A17 /* weshare-toolbarIcon.png */; };
 		55D793D71100BAF300174A17 /* dialog-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D793D61100BAF300174A17 /* dialog-bg.png */; };
 		55DD022210B2E70E00518F52 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DD022110B2E70E00518F52 /* MessageUI.framework */; };
 		55E6E51310B41DB50032A584 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E6E51210B41DB50032A584 /* QuartzCore.framework */; };
@@ -173,6 +174,8 @@
 		553983AC10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FirstResponderAdditions.h"; path = "../Utilities/UIView+FirstResponderAdditions.h"; sourceTree = "<group>"; };
 		553983AD10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FirstResponderAdditions.m"; path = "../Utilities/UIView+FirstResponderAdditions.m"; sourceTree = "<group>"; };
 		5539883910C7F6C100E9C0E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-toolbarIcon-colored.png"; sourceTree = "<group>"; };
+		553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-toolbarIcon-colored-highlighted.png"; sourceTree = "<group>"; };
 		554C411C10FE1628006101F6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		5553D73710F783AF000AC945 /* NSURL+TinyUrlAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+TinyUrlAdditions.h"; sourceTree = "<group>"; };
 		5553D73810F783AF000AC945 /* NSURL+TinyUrlAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+TinyUrlAdditions.m"; sourceTree = "<group>"; };
@@ -200,7 +203,6 @@
 		55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmptyAdditions.m"; sourceTree = "<group>"; };
 		55D793091100AF3900174A17 /* weshare-logo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-medium.png"; sourceTree = "<group>"; };
 		55D7930A1100AF3900174A17 /* weshare-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-small.png"; sourceTree = "<group>"; };
-		55D7930B1100AF3900174A17 /* weshare-toolbarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-toolbarIcon.png"; sourceTree = "<group>"; };
 		55D793D61100BAF300174A17 /* dialog-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog-bg.png"; sourceTree = "<group>"; };
 		55DD022110B2E70E00518F52 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		55E6E51210B41DB50032A584 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -610,12 +612,13 @@
 		55F4A0A110D7F342006C9649 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */,
+				553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */,
 				551187861100CD1D00BD68EB /* weshare-logo-result.png */,
 				5511875E1100C30D00BD68EB /* weshare-icon-big.png */,
 				55D793D61100BAF300174A17 /* dialog-bg.png */,
 				55D793091100AF3900174A17 /* weshare-logo-medium.png */,
 				55D7930A1100AF3900174A17 /* weshare-logo-small.png */,
-				55D7930B1100AF3900174A17 /* weshare-toolbarIcon.png */,
 				55F4224311007BC0004AA2A7 /* WeShare.strings */,
 				554C411C10FE1628006101F6 /* line.png */,
 				5589E84B10FB6CE000635893 /* dialog_subtitleBar.png */,
@@ -765,10 +768,11 @@
 				55F4225A11007BC0004AA2A7 /* WeShare.strings in Resources */,
 				55D7930C1100AF3900174A17 /* weshare-logo-medium.png in Resources */,
 				55D7930D1100AF3900174A17 /* weshare-logo-small.png in Resources */,
-				55D7930E1100AF3900174A17 /* weshare-toolbarIcon.png in Resources */,
 				55D793D71100BAF300174A17 /* dialog-bg.png in Resources */,
 				5511875F1100C30D00BD68EB /* weshare-icon-big.png in Resources */,
 				551187871100CD1D00BD68EB /* weshare-logo-result.png in Resources */,
+				553CD7DC11074FAD00F936C3 /* weshare-toolbarIcon-colored.png in Resources */,
+				553CDA3611085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

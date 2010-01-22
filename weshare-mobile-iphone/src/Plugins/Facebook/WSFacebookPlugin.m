@@ -48,25 +48,20 @@
 @synthesize apiKey;
 @synthesize appSecret;
 @synthesize useSessionProxy;
-@synthesize sessionProxyUrl;
-@synthesize attachmentTemplate;
+@synthesize sessionProxyURL;
 
 - (id)initWithConfig:(NSDictionary*)configDict
 {
 	self = [super initWithConfig:configDict];
 	if (self != nil) {
 		self.apiKey = [self.config objectForKey: @"apiKey"];
-		if (!self.apiKey) {
-			// No API-Key supplied, disabled the plugin
-			self.enabled = NO;
-		}
 		self.useSessionProxy = [[self.config objectForKey: @"useSessionProxy"] boolValue];
-		if (useSessionProxy) {
-			self.sessionProxyUrl = [self.config objectForKey: @"sessionProxyUrl"];
+		
+		if (self.useSessionProxy) {
+			self.sessionProxyURL = [NSURL URLWithString: [self.config objectForKey: @"sessionProxyURL"]];
 		} else {
 			self.appSecret = [self.config objectForKey: @"appSecret"];
 		}
-		self.attachmentTemplate = [self.config objectForKey: @"attachmentTemplate"];
 		
 		[self createSession];
 	}
@@ -79,7 +74,8 @@
 	[facebookSession logout];
 	[facebookSession release];
     [apiKey release], apiKey = nil;
-    [sessionProxyUrl release], sessionProxyUrl = nil;
+    [sessionProxyURL release], sessionProxyURL = nil;
+	
 	[super dealloc];
 }
 
@@ -164,14 +160,14 @@
 
 - (void)createSession
 {
-	if (!self.useSessionProxy) {
+	if (self.useSessionProxy) {
 		facebookSession = [[FBSession sessionForApplication: self.apiKey
-														 secret: self.appSecret
-													   delegate: self] retain];
+											getSessionProxy: [self.sessionProxyURL absoluteString]
+												   delegate: self] retain];
 	} else {
 		facebookSession = [[FBSession sessionForApplication: self.apiKey
-												getSessionProxy: self.sessionProxyUrl
-													   delegate: self] retain];
+													 secret: self.appSecret
+												   delegate: self] retain];
 	}
 }
 
@@ -194,6 +190,7 @@
 
 - (void)session:(FBSession*)session didLogin:(FBUID)uid
 {
+	facebookSession = [session retain];
 	NSLog(@"User with id %lld logged in.", uid);
 }
 

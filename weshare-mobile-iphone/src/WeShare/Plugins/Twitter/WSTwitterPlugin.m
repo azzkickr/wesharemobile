@@ -50,7 +50,7 @@ typedef enum {
 		if (credentials) {
 			[twitterEngine setUsername: [self.credentials user] password: [self.credentials password]];
 		}
-		//[twitterEngine setClientName: @"WeShare" version: @"1.0" URL: @"http://code.google.com/p/socialmobile" token: @"socialmobile"];
+		[twitterEngine setClientName: @"WeShare" version: @"1.0" URL: @"http://code.google.com/p/wesharemobile" token: @"weshare"];
 		
 		connectionIdentifierMap = [[NSMutableDictionary alloc] initWithCapacity: 2];
 		

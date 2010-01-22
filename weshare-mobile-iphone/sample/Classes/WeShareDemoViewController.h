@@ -52,6 +52,8 @@
 	IBOutlet UIBarItem* doneItem;
 	
 	WSShareDialog* shareDialog;
+	
+	IBOutlet UIToolbar* toolbar;
 }
 
 - (NSDictionary*)shareData;

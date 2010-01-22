@@ -62,6 +62,11 @@
 	[scrollView setContentSize: [contentView bounds].size];
 	messageView.layer.borderWidth = 1.0;
 	messageView.layer.borderColor = [UIColor darkGrayColor].CGColor;
+	
+	NSMutableArray* items = [NSMutableArray arrayWithArray: toolbar.items];
+	[items addObject: [WSShareCenter weShareToolbarItemWithTarget: self action: @selector(showDialog)]];
+	
+	[toolbar setItems: items animated: NO];
 }
 
 - (IBAction)showDialog

@@ -11,13 +11,11 @@
 			<key>displayName</key>
 			<string>Facebook</string>
 			<key>apiKey</key>
-			<string>Insert your API key here.</string>
-			<key>appSecret</key>
-			<string>Insert your app secret here.</string>
+			<string>2a8936ddd3f6b04499a88221e99a6de2</string>
 			<key>useSessionProxy</key>
-			<false/>
-			<key>attachmentTemplate</key>
-			<string>{&quot;name&quot;:&quot;WeShareDemo&quot;,&quot;href&quot;:&quot;%@&quot;,&quot;caption&quot;:&quot;%@&quot;,&quot;description&quot;:&quot;%@&quot;}</string>
+			<true/>
+			<key>sessionProxyURL</key>
+			<string>http://wesharemobile.appspot.com/facebook</string>
 			<key>iconImageName</key>
 			<string>facebook-icon.png</string>
 		</dict>
