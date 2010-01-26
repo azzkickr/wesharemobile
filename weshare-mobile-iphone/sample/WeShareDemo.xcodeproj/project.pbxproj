@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* WeShareDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* WeShareDemoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* WeShareDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* WeShareDemoViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* WeShareDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* WeShareDemoViewController.m */; };
+		5511875F1100C30D00BD68EB /* weshare-icon-big.png in Resources */ = {isa = PBXBuildFile; fileRef = 5511875E1100C30D00BD68EB /* weshare-icon-big.png */; };
+		551187871100CD1D00BD68EB /* weshare-logo-result.png in Resources */ = {isa = PBXBuildFile; fileRef = 551187861100CD1D00BD68EB /* weshare-logo-result.png */; };
+		5513929C10F1FA88002EB8B7 /* MPOAuthAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927010F1FA88002EB8B7 /* MPOAuthAPI.m */; };
+		5513929D10F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927310F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.m */; };
+		5513929E10F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927510F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.m */; };
+		5513929F10F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927710F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.m */; };
+		551392A010F1FA88002EB8B7 /* oauthAutoConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5513927910F1FA88002EB8B7 /* oauthAutoConfig.plist */; };
+		551392A110F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927C10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m */; };
+		551392A210F1FA88002EB8B7 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927D10F1FA88002EB8B7 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m */; };
+		551392A310F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927F10F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m */; };
+		551392A410F1FA88002EB8B7 /* NSURLResponse+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513928110F1FA88002EB8B7 /* NSURLResponse+Encoding.m */; };
+		551392A510F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513928310F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m */; };
+		551392A910F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513928D10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m */; };
+		551392AA10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929110F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m */; };
+		551392AB10F1FA88002EB8B7 /* MPOAuthConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929310F1FA88002EB8B7 /* MPOAuthConnection.m */; };
+		551392AC10F1FA88002EB8B7 /* MPOAuthURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929510F1FA88002EB8B7 /* MPOAuthURLRequest.m */; };
+		551392AD10F1FA88002EB8B7 /* MPOAuthURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929710F1FA88002EB8B7 /* MPOAuthURLResponse.m */; };
+		551392AE10F1FA88002EB8B7 /* MPOAuthSignatureParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929910F1FA88002EB8B7 /* MPOAuthSignatureParameter.m */; };
+		551392AF10F1FA88002EB8B7 /* MPURLRequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929B10F1FA88002EB8B7 /* MPURLRequestParameter.m */; };
+		552F67D810D124B2002143D0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F67D710D124B2002143D0 /* libxml2.dylib */; };
+		552F68C310D143F3002143D0 /* WSDeliciousAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 552F68C210D143F3002143D0 /* WSDeliciousAPI.m */; };
+		552F68DC10D144B5002143D0 /* DeliciousURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 552F68DB10D144B5002143D0 /* DeliciousURLRequest.m */; };
+		552F694A10D15A26002143D0 /* UserAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552F694810D15A26002143D0 /* UserAuthViewController.m */; };
+		552F694B10D15A26002143D0 /* UserAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552F694910D15A26002143D0 /* UserAuthViewController.xib */; };
+		553983AE10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 553983AD10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m */; };
+		5539883A10C7F6C100E9C0E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5539883910C7F6C100E9C0E4 /* Security.framework */; };
+		553CD7DC11074FAD00F936C3 /* weshare-toolbarIcon-colored.png in Resources */ = {isa = PBXBuildFile; fileRef = 553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */; };
+		553CDA3611085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */; };
+		554C3CF310FCBFC8006101F6 /* WSDeliciousPluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F232F210B6FFA100A3DA6B /* WSDeliciousPluginViewController.xib */; };
+		554C3D1D10FCC349006101F6 /* WSTwitterPluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5578D5A610C93CFE00E06757 /* WSTwitterPluginViewController.xib */; };
+		554C411D10FE1628006101F6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C411C10FE1628006101F6 /* line.png */; };
+		5553D73B10F783AF000AC945 /* NSURL+TinyUrlAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553D73810F783AF000AC945 /* NSURL+TinyUrlAdditions.m */; };
+		5553D73C10F783AF000AC945 /* WSSharingResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553D73A10F783AF000AC945 /* WSSharingResultView.m */; };
+		5553D74010F783C6000AC945 /* ico_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5553D73D10F783C6000AC945 /* ico_fail.png */; };
+		5553D74110F783C6000AC945 /* ico_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 5553D73E10F783C6000AC945 /* ico_ok.png */; };
+		5553D74210F783C6000AC945 /* neofonie-open.png in Resources */ = {isa = PBXBuildFile; fileRef = 5553D73F10F783C6000AC945 /* neofonie-open.png */; };
+		5557DA0810DB925400DD715E /* about-weshare.html in Resources */ = {isa = PBXBuildFile; fileRef = 5557DA0710DB925400DD715E /* about-weshare.html */; };
+		5557DACD10DBAC8A00DD715E /* WSDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5557DACC10DBAC8A00DD715E /* WSDialog.m */; };
+		556D39FF10BADCA500D857BB /* WSShareDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 556D39FD10BADCA500D857BB /* WSShareDialog.m */; };
+		556D3A0010BADCA500D857BB /* WSShareDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556D39FE10BADCA500D857BB /* WSShareDialog.xib */; };
+		556D3E4310BD597700D857BB /* WSSharePluginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 556D3E4110BD597700D857BB /* WSSharePluginDialog.m */; };
+		556D3E4410BD597700D857BB /* WSSharePluginDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556D3E4210BD597700D857BB /* WSSharePluginDialog.xib */; };
+		5578BC2E10CCFEC300E3ABCF /* WSTwitterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2331510B6FFA200A3DA6B /* WSTwitterPlugin.m */; };
+		5578D5A710C93CFE00E06757 /* WSTwitterPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578D5A510C93CFE00E06757 /* WSTwitterPluginViewController.m */; };
+		5589E84C10FB6CE000635893 /* dialog_subtitleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5589E84B10FB6CE000635893 /* dialog_subtitleBar.png */; };
+		55B4130410CD3A300022ADAE /* WSPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B4130310CD3A300022ADAE /* WSPluginViewController.m */; };
+		55C9927D10FE37AC0054758E /* NSString+EmptyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */; };
+		55D7930C1100AF3900174A17 /* weshare-logo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D793091100AF3900174A17 /* weshare-logo-medium.png */; };
+		55D7930D1100AF3900174A17 /* weshare-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D7930A1100AF3900174A17 /* weshare-logo-small.png */; };
+		55D793D71100BAF300174A17 /* dialog-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D793D61100BAF300174A17 /* dialog-bg.png */; };
+		55DD022210B2E70E00518F52 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DD022110B2E70E00518F52 /* MessageUI.framework */; };
+		55E6E51310B41DB50032A584 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E6E51210B41DB50032A584 /* QuartzCore.framework */; };
+		55F232CC10B6FF7700A3DA6B /* WSBasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232C710B6FF7700A3DA6B /* WSBasePlugin.m */; };
+		55F232CD10B6FF7700A3DA6B /* WSShareCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232C910B6FF7700A3DA6B /* WSShareCenter.m */; };
+		55F232E810B6FF8300A3DA6B /* UrlRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232E010B6FF8300A3DA6B /* UrlRequestOperation.m */; };
+		55F2331610B6FFA200A3DA6B /* WSEmailPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232EC10B6FFA100A3DA6B /* WSEmailPlugin.m */; };
+		55F2331710B6FFA200A3DA6B /* WSDeliciousPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232EF10B6FFA100A3DA6B /* WSDeliciousPlugin.m */; };
+		55F2331810B6FFA200A3DA6B /* WSDeliciousPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232F110B6FFA100A3DA6B /* WSDeliciousPluginViewController.m */; };
+		55F2331B10B6FFA200A3DA6B /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232F910B6FFA100A3DA6B /* FBConnectGlobal.m */; };
+		55F2331C10B6FFA200A3DA6B /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232FB10B6FFA100A3DA6B /* FBSession.m */; };
+		55F2331D10B6FFA200A3DA6B /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232FD10B6FFA100A3DA6B /* FBRequest.m */; };
+		55F2331E10B6FFA200A3DA6B /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F232FF10B6FFA100A3DA6B /* FBXMLHandler.m */; };
+		55F2331F10B6FFA200A3DA6B /* FBLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330110B6FFA100A3DA6B /* FBLoginButton.m */; };
+		55F2332010B6FFA200A3DA6B /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330310B6FFA100A3DA6B /* FBDialog.m */; };
+		55F2332110B6FFA200A3DA6B /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330510B6FFA100A3DA6B /* FBLoginDialog.m */; };
+		55F2332210B6FFA200A3DA6B /* FBPermissionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330710B6FFA100A3DA6B /* FBPermissionDialog.m */; };
+		55F2332410B6FFA200A3DA6B /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330B10B6FFA100A3DA6B /* FBStreamDialog.m */; };
+		55F2332510B6FFA200A3DA6B /* FBConnect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55F2330C10B6FFA100A3DA6B /* FBConnect.bundle */; };
+		55F2332610B6FFA200A3DA6B /* WSFacebookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330E10B6FFA100A3DA6B /* WSFacebookPlugin.m */; };
+		55F4225A11007BC0004AA2A7 /* WeShare.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F4224311007BC0004AA2A7 /* WeShare.strings */; };
+		55F4A0AE10D7F342006C9649 /* delicious-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A0A310D7F342006C9649 /* delicious-icon.png */; };
+		55F4A0AF10D7F342006C9649 /* facebook-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A0A410D7F342006C9649 /* facebook-icon.png */; };
+		55F4A0B110D7F342006C9649 /* header_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A0A610D7F342006C9649 /* header_bg.png */; };
+		55F4A0B210D7F342006C9649 /* mail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A0A710D7F342006C9649 /* mail-icon.png */; };
+		55F4A0B610D7F342006C9649 /* dialog_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A0AB10D7F342006C9649 /* dialog_close.png */; };
+		55F4A0B710D7F342006C9649 /* twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A0AC10D7F342006C9649 /* twitter-icon.png */; };
+		55FCB3D510B1A69500938656 /* WeShareConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55FCB3D410B1A69500938656 /* WeShareConfig.plist */; };
+		9655802410D0EAC600086829 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 96557FF610D0EAC600086829 /* MGTwitterEngine.m */; };
+		9655802510D0EAC600086829 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 96557FF910D0EAC600086829 /* MGTwitterHTTPURLConnection.m */; };
+		9655802610D0EAC600086829 /* MGTwitterLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 96557FFE10D0EAC600086829 /* MGTwitterLibXMLParser.m */; };
+		9655802710D0EAC600086829 /* MGTwitterStatusesLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655800010D0EAC600086829 /* MGTwitterStatusesLibXMLParser.m */; };
+		9655802810D0EAC600086829 /* MGTwitterUsersLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655800210D0EAC600086829 /* MGTwitterUsersLibXMLParser.m */; };
+		9655802910D0EAC600086829 /* MGTwitterMessagesLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655800410D0EAC600086829 /* MGTwitterMessagesLibXMLParser.m */; };
+		9655802A10D0EAC600086829 /* MGTwitterMiscLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655800610D0EAC600086829 /* MGTwitterMiscLibXMLParser.m */; };
+		9655803610D0EAC600086829 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655802110D0EAC600086829 /* NSString+UUID.m */; };
+		9655803710D0EAC600086829 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655802310D0EAC600086829 /* NSData+Base64.m */; };
+		9655804D10D0ED9C00086829 /* MGTwitterXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804410D0ED9C00086829 /* MGTwitterXMLParser.m */; };
+		9655804E10D0ED9C00086829 /* MGTwitterStatusesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804610D0ED9C00086829 /* MGTwitterStatusesParser.m */; };
+		9655804F10D0ED9C00086829 /* MGTwitterUsersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804810D0ED9C00086829 /* MGTwitterUsersParser.m */; };
+		9655805010D0ED9C00086829 /* MGTwitterMessagesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804A10D0ED9C00086829 /* MGTwitterMessagesParser.m */; };
+		9655805110D0ED9C00086829 /* MGTwitterMiscParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804C10D0ED9C00086829 /* MGTwitterMiscParser.m */; };
+		96764687110EE7CC00F11F01 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 96764685110EE7CC00F11F01 /* Base64Transcoder.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* WeShareDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeShareDemoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* WeShareDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeShareDemoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* WeShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* WeShareDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeShareDemoViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* WeShareDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeShareDemoViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* WeShareDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeShareDemoViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* WeShareDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeShareDemo_Prefix.pch; sourceTree = "<group>"; };
+		5511875E1100C30D00BD68EB /* weshare-icon-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-icon-big.png"; sourceTree = "<group>"; };
+		551187861100CD1D00BD68EB /* weshare-logo-result.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-result.png"; sourceTree = "<group>"; };
+		5513926D10F1FA88002EB8B7 /* MPOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuth.h; sourceTree = "<group>"; };
+		5513926E10F1FA88002EB8B7 /* MPDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDebug.h; sourceTree = "<group>"; };
+		5513926F10F1FA88002EB8B7 /* MPOAuthAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAPI.h; sourceTree = "<group>"; };
+		5513927010F1FA88002EB8B7 /* MPOAuthAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAPI.m; sourceTree = "<group>"; };
+		5513927210F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAuthenticationMethod.h; sourceTree = "<group>"; };
+		5513927310F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAuthenticationMethod.m; sourceTree = "<group>"; };
+		5513927410F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAuthenticationMethodOAuth.h; sourceTree = "<group>"; };
+		5513927510F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAuthenticationMethodOAuth.m; sourceTree = "<group>"; };
+		5513927610F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAuthenticationMethodAuthExchange.h; sourceTree = "<group>"; };
+		5513927710F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAuthenticationMethodAuthExchange.m; sourceTree = "<group>"; };
+		5513927910F1FA88002EB8B7 /* oauthAutoConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = oauthAutoConfig.plist; path = ../lib/mpoauthconnection/Resources/oauthAutoConfig.plist; sourceTree = SOURCE_ROOT; };
+		5513927B10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPOAuthCredentialConcreteStore+KeychainAdditions.h"; sourceTree = "<group>"; };
+		5513927C10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m"; sourceTree = "<group>"; };
+		5513927D10F1FA88002EB8B7 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m"; sourceTree = "<group>"; };
+		5513927E10F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MPURLParameterAdditions.h"; sourceTree = "<group>"; };
+		5513927F10F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MPURLParameterAdditions.m"; sourceTree = "<group>"; };
+		5513928010F1FA88002EB8B7 /* NSURLResponse+Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLResponse+Encoding.h"; sourceTree = "<group>"; };
+		5513928110F1FA88002EB8B7 /* NSURLResponse+Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLResponse+Encoding.m"; sourceTree = "<group>"; };
+		5513928210F1FA88002EB8B7 /* NSString+URLEscapingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscapingAdditions.h"; sourceTree = "<group>"; };
+		5513928310F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscapingAdditions.m"; sourceTree = "<group>"; };
+		5513928C10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAPIRequestLoader.h; sourceTree = "<group>"; };
+		5513928D10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAPIRequestLoader.m; sourceTree = "<group>"; };
+		5513928E10F1FA88002EB8B7 /* MPOAuthCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthCredentialStore.h; sourceTree = "<group>"; };
+		5513928F10F1FA88002EB8B7 /* MPOAuthParameterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthParameterFactory.h; sourceTree = "<group>"; };
+		5513929010F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthCredentialConcreteStore.h; sourceTree = "<group>"; };
+		5513929110F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthCredentialConcreteStore.m; sourceTree = "<group>"; };
+		5513929210F1FA88002EB8B7 /* MPOAuthConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthConnection.h; sourceTree = "<group>"; };
+		5513929310F1FA88002EB8B7 /* MPOAuthConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthConnection.m; sourceTree = "<group>"; };
+		5513929410F1FA88002EB8B7 /* MPOAuthURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthURLRequest.h; sourceTree = "<group>"; };
+		5513929510F1FA88002EB8B7 /* MPOAuthURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthURLRequest.m; sourceTree = "<group>"; };
+		5513929610F1FA88002EB8B7 /* MPOAuthURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthURLResponse.h; sourceTree = "<group>"; };
+		5513929710F1FA88002EB8B7 /* MPOAuthURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthURLResponse.m; sourceTree = "<group>"; };
+		5513929810F1FA88002EB8B7 /* MPOAuthSignatureParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthSignatureParameter.h; sourceTree = "<group>"; };
+		5513929910F1FA88002EB8B7 /* MPOAuthSignatureParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthSignatureParameter.m; sourceTree = "<group>"; };
+		5513929A10F1FA88002EB8B7 /* MPURLRequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPURLRequestParameter.h; sourceTree = "<group>"; };
+		5513929B10F1FA88002EB8B7 /* MPURLRequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPURLRequestParameter.m; sourceTree = "<group>"; };
+		552F67D710D124B2002143D0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		552F68C110D143F3002143D0 /* WSDeliciousAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDeliciousAPI.h; sourceTree = "<group>"; };
+		552F68C210D143F3002143D0 /* WSDeliciousAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDeliciousAPI.m; sourceTree = "<group>"; };
+		552F68DA10D144B5002143D0 /* DeliciousURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliciousURLRequest.h; sourceTree = "<group>"; };
+		552F68DB10D144B5002143D0 /* DeliciousURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliciousURLRequest.m; sourceTree = "<group>"; };
+		552F694710D15A26002143D0 /* UserAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthViewController.h; sourceTree = "<group>"; };
+		552F694810D15A26002143D0 /* UserAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthViewController.m; sourceTree = "<group>"; };
+		552F694910D15A26002143D0 /* UserAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAuthViewController.xib; sourceTree = "<group>"; };
+		553983AC10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FirstResponderAdditions.h"; path = "../Utilities/UIView+FirstResponderAdditions.h"; sourceTree = "<group>"; };
+		553983AD10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FirstResponderAdditions.m"; path = "../Utilities/UIView+FirstResponderAdditions.m"; sourceTree = "<group>"; };
+		5539883910C7F6C100E9C0E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-toolbarIcon-colored.png"; sourceTree = "<group>"; };
+		553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-toolbarIcon-colored-highlighted.png"; sourceTree = "<group>"; };
+		554C411C10FE1628006101F6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		5553D73710F783AF000AC945 /* NSURL+TinyUrlAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+TinyUrlAdditions.h"; sourceTree = "<group>"; };
+		5553D73810F783AF000AC945 /* NSURL+TinyUrlAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+TinyUrlAdditions.m"; sourceTree = "<group>"; };
+		5553D73910F783AF000AC945 /* WSSharingResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSharingResultView.h; sourceTree = "<group>"; };
+		5553D73A10F783AF000AC945 /* WSSharingResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSharingResultView.m; sourceTree = "<group>"; };
+		5553D73D10F783C6000AC945 /* ico_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_fail.png; sourceTree = "<group>"; };
+		5553D73E10F783C6000AC945 /* ico_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_ok.png; sourceTree = "<group>"; };
+		5553D73F10F783C6000AC945 /* neofonie-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neofonie-open.png"; sourceTree = "<group>"; };
+		5557DA0710DB925400DD715E /* about-weshare.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "about-weshare.html"; sourceTree = "<group>"; };
+		5557DACB10DBAC8A00DD715E /* WSDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDialog.h; sourceTree = "<group>"; };
+		5557DACC10DBAC8A00DD715E /* WSDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDialog.m; sourceTree = "<group>"; };
+		556D39FC10BADCA500D857BB /* WSShareDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSShareDialog.h; sourceTree = "<group>"; };
+		556D39FD10BADCA500D857BB /* WSShareDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSShareDialog.m; sourceTree = "<group>"; };
+		556D39FE10BADCA500D857BB /* WSShareDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSShareDialog.xib; sourceTree = "<group>"; };
+		556D3E4010BD597700D857BB /* WSSharePluginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSharePluginDialog.h; sourceTree = "<group>"; };
+		556D3E4110BD597700D857BB /* WSSharePluginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSharePluginDialog.m; sourceTree = "<group>"; };
+		556D3E4210BD597700D857BB /* WSSharePluginDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSSharePluginDialog.xib; sourceTree = "<group>"; };
+		5578D5A410C93CFE00E06757 /* WSTwitterPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTwitterPluginViewController.h; sourceTree = "<group>"; };
+		5578D5A510C93CFE00E06757 /* WSTwitterPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTwitterPluginViewController.m; sourceTree = "<group>"; };
+		5578D5A610C93CFE00E06757 /* WSTwitterPluginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSTwitterPluginViewController.xib; sourceTree = "<group>"; };
+		5589E84B10FB6CE000635893 /* dialog_subtitleBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog_subtitleBar.png; sourceTree = "<group>"; };
+		55B4130210CD3A300022ADAE /* WSPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPluginViewController.h; sourceTree = "<group>"; };
+		55B4130310CD3A300022ADAE /* WSPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPluginViewController.m; sourceTree = "<group>"; };
+		55C9927B10FE37AC0054758E /* NSString+EmptyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmptyAdditions.h"; sourceTree = "<group>"; };
+		55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmptyAdditions.m"; sourceTree = "<group>"; };
+		55D793091100AF3900174A17 /* weshare-logo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-medium.png"; sourceTree = "<group>"; };
+		55D7930A1100AF3900174A17 /* weshare-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-small.png"; sourceTree = "<group>"; };
+		55D793D61100BAF300174A17 /* dialog-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog-bg.png"; sourceTree = "<group>"; };
+		55DD022110B2E70E00518F52 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		55E6E51210B41DB50032A584 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		55F232C410B6FF7700A3DA6B /* WeShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeShare.h; sourceTree = "<group>"; };
+		55F232C510B6FF7700A3DA6B /* WeShareGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeShareGlobal.h; sourceTree = "<group>"; };
+		55F232C610B6FF7700A3DA6B /* WSBasePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBasePlugin.h; sourceTree = "<group>"; };
+		55F232C710B6FF7700A3DA6B /* WSBasePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBasePlugin.m; sourceTree = "<group>"; };
+		55F232C810B6FF7700A3DA6B /* WSShareCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSShareCenter.h; sourceTree = "<group>"; };
+		55F232C910B6FF7700A3DA6B /* WSShareCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSShareCenter.m; sourceTree = "<group>"; };
+		55F232CA10B6FF7700A3DA6B /* WSSharePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSharePlugin.h; sourceTree = "<group>"; };
+		55F232DF10B6FF8300A3DA6B /* UrlRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UrlRequestOperation.h; path = ../Utilities/UrlRequestOperation.h; sourceTree = "<group>"; };
+		55F232E010B6FF8300A3DA6B /* UrlRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UrlRequestOperation.m; path = ../Utilities/UrlRequestOperation.m; sourceTree = "<group>"; };
+		55F232EB10B6FFA100A3DA6B /* WSEmailPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSEmailPlugin.h; sourceTree = "<group>"; };
+		55F232EC10B6FFA100A3DA6B /* WSEmailPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSEmailPlugin.m; sourceTree = "<group>"; };
+		55F232EE10B6FFA100A3DA6B /* WSDeliciousPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDeliciousPlugin.h; sourceTree = "<group>"; };
+		55F232EF10B6FFA100A3DA6B /* WSDeliciousPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDeliciousPlugin.m; sourceTree = "<group>"; };
+		55F232F010B6FFA100A3DA6B /* WSDeliciousPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDeliciousPluginViewController.h; sourceTree = "<group>"; };
+		55F232F110B6FFA100A3DA6B /* WSDeliciousPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDeliciousPluginViewController.m; sourceTree = "<group>"; };
+		55F232F210B6FFA100A3DA6B /* WSDeliciousPluginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSDeliciousPluginViewController.xib; sourceTree = "<group>"; };
+		55F232F710B6FFA100A3DA6B /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBConnect.h"; sourceTree = SOURCE_ROOT; };
+		55F232F810B6FFA100A3DA6B /* FBConnectGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnectGlobal.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBConnectGlobal.h"; sourceTree = SOURCE_ROOT; };
+		55F232F910B6FFA100A3DA6B /* FBConnectGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBConnectGlobal.m; path = "../lib/facebook-iphone-sdk/src/FBConnectGlobal.m"; sourceTree = SOURCE_ROOT; };
+		55F232FA10B6FFA100A3DA6B /* FBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBSession.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBSession.h"; sourceTree = SOURCE_ROOT; };
+		55F232FB10B6FFA100A3DA6B /* FBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBSession.m; path = "../lib/facebook-iphone-sdk/src/FBSession.m"; sourceTree = SOURCE_ROOT; };
+		55F232FC10B6FFA100A3DA6B /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRequest.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBRequest.h"; sourceTree = SOURCE_ROOT; };
+		55F232FD10B6FFA100A3DA6B /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRequest.m; path = "../lib/facebook-iphone-sdk/src/FBRequest.m"; sourceTree = SOURCE_ROOT; };
+		55F232FE10B6FFA100A3DA6B /* FBXMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBXMLHandler.h; path = "../lib/facebook-iphone-sdk/src/FBXMLHandler.h"; sourceTree = SOURCE_ROOT; };
+		55F232FF10B6FFA100A3DA6B /* FBXMLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBXMLHandler.m; path = "../lib/facebook-iphone-sdk/src/FBXMLHandler.m"; sourceTree = SOURCE_ROOT; };
+		55F2330010B6FFA100A3DA6B /* FBLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginButton.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBLoginButton.h"; sourceTree = SOURCE_ROOT; };
+		55F2330110B6FFA100A3DA6B /* FBLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginButton.m; path = "../lib/facebook-iphone-sdk/src/FBLoginButton.m"; sourceTree = SOURCE_ROOT; };
+		55F2330210B6FFA100A3DA6B /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBDialog.h"; sourceTree = SOURCE_ROOT; };
+		55F2330310B6FFA100A3DA6B /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBDialog.m; path = "../lib/facebook-iphone-sdk/src/FBDialog.m"; sourceTree = SOURCE_ROOT; };
+		55F2330410B6FFA100A3DA6B /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBLoginDialog.h"; sourceTree = SOURCE_ROOT; };
+		55F2330510B6FFA100A3DA6B /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginDialog.m; path = "../lib/facebook-iphone-sdk/src/FBLoginDialog.m"; sourceTree = SOURCE_ROOT; };
+		55F2330610B6FFA100A3DA6B /* FBPermissionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBPermissionDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBPermissionDialog.h"; sourceTree = SOURCE_ROOT; };
+		55F2330710B6FFA100A3DA6B /* FBPermissionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBPermissionDialog.m; path = "../lib/facebook-iphone-sdk/src/FBPermissionDialog.m"; sourceTree = SOURCE_ROOT; };
+		55F2330810B6FFA100A3DA6B /* FBStreamDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBStreamDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBStreamDialog.h"; sourceTree = SOURCE_ROOT; };
+		55F2330B10B6FFA100A3DA6B /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBStreamDialog.m; path = "../lib/facebook-iphone-sdk/src/FBStreamDialog.m"; sourceTree = SOURCE_ROOT; };
+		55F2330C10B6FFA100A3DA6B /* FBConnect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBConnect.bundle; path = "../lib/facebook-iphone-sdk/src/FBConnect.bundle"; sourceTree = SOURCE_ROOT; };
+		55F2330D10B6FFA100A3DA6B /* WSFacebookPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFacebookPlugin.h; sourceTree = "<group>"; };
+		55F2330E10B6FFA100A3DA6B /* WSFacebookPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFacebookPlugin.m; sourceTree = "<group>"; };
+		55F2331410B6FFA200A3DA6B /* WSTwitterPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTwitterPlugin.h; sourceTree = "<group>"; };
+		55F2331510B6FFA200A3DA6B /* WSTwitterPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTwitterPlugin.m; sourceTree = "<group>"; };
+		55F4224411007BC0004AA2A7 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/WeShare.strings; sourceTree = "<group>"; };
+		55F4224511007BC0004AA2A7 /* German */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/WeShare.strings; sourceTree = "<group>"; };
+		55F4A0A310D7F342006C9649 /* delicious-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delicious-icon.png"; sourceTree = "<group>"; };
+		55F4A0A410D7F342006C9649 /* facebook-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-icon.png"; sourceTree = "<group>"; };
+		55F4A0A610D7F342006C9649 /* header_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_bg.png; sourceTree = "<group>"; };
+		55F4A0A710D7F342006C9649 /* mail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-icon.png"; sourceTree = "<group>"; };
+		55F4A0AB10D7F342006C9649 /* dialog_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog_close.png; sourceTree = "<group>"; };
+		55F4A0AC10D7F342006C9649 /* twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-icon.png"; sourceTree = "<group>"; };
+		55FCB3D410B1A69500938656 /* WeShareConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WeShareConfig.plist; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* WeShareDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeShareDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		96557FF410D0EAC600086829 /* MGTwitterEngineGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngineGlobalHeader.h; path = ../lib/MGTwitterEngine/MGTwitterEngineGlobalHeader.h; sourceTree = SOURCE_ROOT; };
+		96557FF510D0EAC600086829 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngine.h; path = ../lib/MGTwitterEngine/MGTwitterEngine.h; sourceTree = SOURCE_ROOT; };
+		96557FF610D0EAC600086829 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterEngine.m; path = ../lib/MGTwitterEngine/MGTwitterEngine.m; sourceTree = SOURCE_ROOT; };
+		96557FF710D0EAC600086829 /* MGTwitterEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngineDelegate.h; path = ../lib/MGTwitterEngine/MGTwitterEngineDelegate.h; sourceTree = SOURCE_ROOT; };
+		96557FF810D0EAC600086829 /* MGTwitterHTTPURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterHTTPURLConnection.h; path = ../lib/MGTwitterEngine/MGTwitterHTTPURLConnection.h; sourceTree = SOURCE_ROOT; };
+		96557FF910D0EAC600086829 /* MGTwitterHTTPURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterHTTPURLConnection.m; path = ../lib/MGTwitterEngine/MGTwitterHTTPURLConnection.m; sourceTree = SOURCE_ROOT; };
+		96557FFA10D0EAC600086829 /* MGTwitterRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterRequestTypes.h; path = ../lib/MGTwitterEngine/MGTwitterRequestTypes.h; sourceTree = SOURCE_ROOT; };
+		96557FFB10D0EAC600086829 /* MGTwitterParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterParserDelegate.h; path = ../lib/MGTwitterEngine/MGTwitterParserDelegate.h; sourceTree = SOURCE_ROOT; };
+		96557FFD10D0EAC600086829 /* MGTwitterLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterLibXMLParser.h; path = ../lib/MGTwitterEngine/MGTwitterLibXMLParser.h; sourceTree = SOURCE_ROOT; };
+		96557FFE10D0EAC600086829 /* MGTwitterLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterLibXMLParser.m; path = ../lib/MGTwitterEngine/MGTwitterLibXMLParser.m; sourceTree = SOURCE_ROOT; };
+		96557FFF10D0EAC600086829 /* MGTwitterStatusesLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterStatusesLibXMLParser.h; path = ../lib/MGTwitterEngine/MGTwitterStatusesLibXMLParser.h; sourceTree = SOURCE_ROOT; };
+		9655800010D0EAC600086829 /* MGTwitterStatusesLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterStatusesLibXMLParser.m; path = ../lib/MGTwitterEngine/MGTwitterStatusesLibXMLParser.m; sourceTree = SOURCE_ROOT; };
+		9655800110D0EAC600086829 /* MGTwitterUsersLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterUsersLibXMLParser.h; path = ../lib/MGTwitterEngine/MGTwitterUsersLibXMLParser.h; sourceTree = SOURCE_ROOT; };
+		9655800210D0EAC600086829 /* MGTwitterUsersLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterUsersLibXMLParser.m; path = ../lib/MGTwitterEngine/MGTwitterUsersLibXMLParser.m; sourceTree = SOURCE_ROOT; };
+		9655800310D0EAC600086829 /* MGTwitterMessagesLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMessagesLibXMLParser.h; path = ../lib/MGTwitterEngine/MGTwitterMessagesLibXMLParser.h; sourceTree = SOURCE_ROOT; };
+		9655800410D0EAC600086829 /* MGTwitterMessagesLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMessagesLibXMLParser.m; path = ../lib/MGTwitterEngine/MGTwitterMessagesLibXMLParser.m; sourceTree = SOURCE_ROOT; };
+		9655800510D0EAC600086829 /* MGTwitterMiscLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMiscLibXMLParser.h; path = ../lib/MGTwitterEngine/MGTwitterMiscLibXMLParser.h; sourceTree = SOURCE_ROOT; };
+		9655800610D0EAC600086829 /* MGTwitterMiscLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMiscLibXMLParser.m; path = ../lib/MGTwitterEngine/MGTwitterMiscLibXMLParser.m; sourceTree = SOURCE_ROOT; };
+		9655802010D0EAC600086829 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "../lib/MGTwitterEngine/NSString+UUID.h"; sourceTree = SOURCE_ROOT; };
+		9655802110D0EAC600086829 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "../lib/MGTwitterEngine/NSString+UUID.m"; sourceTree = SOURCE_ROOT; };
+		9655802210D0EAC600086829 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "../lib/MGTwitterEngine/NSData+Base64.h"; sourceTree = SOURCE_ROOT; };
+		9655802310D0EAC600086829 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "../lib/MGTwitterEngine/NSData+Base64.m"; sourceTree = SOURCE_ROOT; };
+		9655804310D0ED9C00086829 /* MGTwitterXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterXMLParser.h; path = ../lib/MGTwitterEngine/MGTwitterXMLParser.h; sourceTree = SOURCE_ROOT; };
+		9655804410D0ED9C00086829 /* MGTwitterXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterXMLParser.m; path = ../lib/MGTwitterEngine/MGTwitterXMLParser.m; sourceTree = SOURCE_ROOT; };
+		9655804510D0ED9C00086829 /* MGTwitterStatusesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterStatusesParser.h; path = ../lib/MGTwitterEngine/MGTwitterStatusesParser.h; sourceTree = SOURCE_ROOT; };
+		9655804610D0ED9C00086829 /* MGTwitterStatusesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterStatusesParser.m; path = ../lib/MGTwitterEngine/MGTwitterStatusesParser.m; sourceTree = SOURCE_ROOT; };
+		9655804710D0ED9C00086829 /* MGTwitterUsersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterUsersParser.h; path = ../lib/MGTwitterEngine/MGTwitterUsersParser.h; sourceTree = SOURCE_ROOT; };
+		9655804810D0ED9C00086829 /* MGTwitterUsersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterUsersParser.m; path = ../lib/MGTwitterEngine/MGTwitterUsersParser.m; sourceTree = SOURCE_ROOT; };
+		9655804910D0ED9C00086829 /* MGTwitterMessagesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMessagesParser.h; path = ../lib/MGTwitterEngine/MGTwitterMessagesParser.h; sourceTree = SOURCE_ROOT; };
+		9655804A10D0ED9C00086829 /* MGTwitterMessagesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMessagesParser.m; path = ../lib/MGTwitterEngine/MGTwitterMessagesParser.m; sourceTree = SOURCE_ROOT; };
+		9655804B10D0ED9C00086829 /* MGTwitterMiscParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMiscParser.h; path = ../lib/MGTwitterEngine/MGTwitterMiscParser.h; sourceTree = SOURCE_ROOT; };
+		9655804C10D0ED9C00086829 /* MGTwitterMiscParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMiscParser.m; path = ../lib/MGTwitterEngine/MGTwitterMiscParser.m; sourceTree = SOURCE_ROOT; };
+		96764685110EE7CC00F11F01 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		96764686110EE7CC00F11F01 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				55DD022210B2E70E00518F52 /* MessageUI.framework in Frameworks */,
+				55E6E51310B41DB50032A584 /* QuartzCore.framework in Frameworks */,
+				5539883A10C7F6C100E9C0E4 /* Security.framework in Frameworks */,
+				552F67D810D124B2002143D0 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* WeShareDemoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* WeShareDemoAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* WeShareDemoViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* WeShareDemoViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* WeShareDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				551397BC10F33B2C002EB8B7 /* Dependencies */,
+				55FCB3D410B1A69500938656 /* WeShareConfig.plist */,
+				55F232C310B6FF7700A3DA6B /* WeShare */,
+				55F232E910B6FFA100A3DA6B /* WeShare-Plugins */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* WeShareDemo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* WeShareDemoViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* WeShareDemo-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552F67D710D124B2002143D0 /* libxml2.dylib */,
+				5539883910C7F6C100E9C0E4 /* Security.framework */,
+				55E6E51210B41DB50032A584 /* QuartzCore.framework */,
+				55DD022110B2E70E00518F52 /* MessageUI.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5513926C10F1FA88002EB8B7 /* mpoauthconnection */ = {
+			isa = PBXGroup;
+			children = (
+				551392BA10F1FAC1002EB8B7 /* Authentication Methods */,
+				551392B910F1FABC002EB8B7 /* Resources */,
+				551392B810F1FAB5002EB8B7 /* Additions */,
+				5513926D10F1FA88002EB8B7 /* MPOAuth.h */,
+				5513928C10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.h */,
+				5513928D10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m */,
+				5513928E10F1FA88002EB8B7 /* MPOAuthCredentialStore.h */,
+				5513928F10F1FA88002EB8B7 /* MPOAuthParameterFactory.h */,
+				5513929010F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.h */,
+				5513929110F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m */,
+				5513929210F1FA88002EB8B7 /* MPOAuthConnection.h */,
+				5513929310F1FA88002EB8B7 /* MPOAuthConnection.m */,
+				5513929410F1FA88002EB8B7 /* MPOAuthURLRequest.h */,
+				5513929510F1FA88002EB8B7 /* MPOAuthURLRequest.m */,
+				5513929610F1FA88002EB8B7 /* MPOAuthURLResponse.h */,
+				5513929710F1FA88002EB8B7 /* MPOAuthURLResponse.m */,
+				5513929810F1FA88002EB8B7 /* MPOAuthSignatureParameter.h */,
+				5513929910F1FA88002EB8B7 /* MPOAuthSignatureParameter.m */,
+				5513929A10F1FA88002EB8B7 /* MPURLRequestParameter.h */,
+				5513929B10F1FA88002EB8B7 /* MPURLRequestParameter.m */,
+				5513928410F1FA88002EB8B7 /* Crypto */,
+				5513926E10F1FA88002EB8B7 /* MPDebug.h */,
+				5513926F10F1FA88002EB8B7 /* MPOAuthAPI.h */,
+				5513927010F1FA88002EB8B7 /* MPOAuthAPI.m */,
+			);
+			name = mpoauthconnection;
+			path = ../lib/mpoauthconnection/Source/Framework;
+			sourceTree = SOURCE_ROOT;
+		};
+		5513928410F1FA88002EB8B7 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				96764685110EE7CC00F11F01 /* Base64Transcoder.c */,
+				96764686110EE7CC00F11F01 /* Base64Transcoder.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		551392B810F1FAB5002EB8B7 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5513927B10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditions.h */,
+				5513927C10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m */,
+				5513927D10F1FA88002EB8B7 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m */,
+				5513927E10F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.h */,
+				5513927F10F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m */,
+				5513928010F1FA88002EB8B7 /* NSURLResponse+Encoding.h */,
+				5513928110F1FA88002EB8B7 /* NSURLResponse+Encoding.m */,
+				5513928210F1FA88002EB8B7 /* NSString+URLEscapingAdditions.h */,
+				5513928310F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		551392B910F1FABC002EB8B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5513927910F1FA88002EB8B7 /* oauthAutoConfig.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		551392BA10F1FAC1002EB8B7 /* Authentication Methods */ = {
+			isa = PBXGroup;
+			children = (
+				5513927210F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.h */,
+				5513927310F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.m */,
+				5513927410F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.h */,
+				5513927510F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.m */,
+				5513927610F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.h */,
+				5513927710F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.m */,
+			);
+			name = "Authentication Methods";
+			sourceTree = "<group>";
+		};
+		551397BC10F33B2C002EB8B7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				96557FF310D0EAC600086829 /* MATwitterEngine */,
+				5513926C10F1FA88002EB8B7 /* mpoauthconnection */,
+				55F232F610B6FFA100A3DA6B /* fb-connect-iphone */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		556D39F510BADC3600D857BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5557DACB10DBAC8A00DD715E /* WSDialog.h */,
+				5557DACC10DBAC8A00DD715E /* WSDialog.m */,
+				556D39FC10BADCA500D857BB /* WSShareDialog.h */,
+				556D39FD10BADCA500D857BB /* WSShareDialog.m */,
+				556D39FE10BADCA500D857BB /* WSShareDialog.xib */,
+				556D3E4010BD597700D857BB /* WSSharePluginDialog.h */,
+				556D3E4110BD597700D857BB /* WSSharePluginDialog.m */,
+				556D3E4210BD597700D857BB /* WSSharePluginDialog.xib */,
+				55B4130210CD3A300022ADAE /* WSPluginViewController.h */,
+				55B4130310CD3A300022ADAE /* WSPluginViewController.m */,
+				5553D73910F783AF000AC945 /* WSSharingResultView.h */,
+				5553D73A10F783AF000AC945 /* WSSharingResultView.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		55B412B710CD2C160022ADAE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5553D73710F783AF000AC945 /* NSURL+TinyUrlAdditions.h */,
+				5553D73810F783AF000AC945 /* NSURL+TinyUrlAdditions.m */,
+				55F232DF10B6FF8300A3DA6B /* UrlRequestOperation.h */,
+				55F232E010B6FF8300A3DA6B /* UrlRequestOperation.m */,
+				553983AC10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.h */,
+				553983AD10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m */,
+				55C9927B10FE37AC0054758E /* NSString+EmptyAdditions.h */,
+				55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		55F232C310B6FF7700A3DA6B /* WeShare */ = {
+			isa = PBXGroup;
+			children = (
+				55F4A0A110D7F342006C9649 /* Resources */,
+				55B412B710CD2C160022ADAE /* Utilities */,
+				556D39F510BADC3600D857BB /* UI */,
+				55F232C410B6FF7700A3DA6B /* WeShare.h */,
+				55F232C510B6FF7700A3DA6B /* WeShareGlobal.h */,
+				55F232CA10B6FF7700A3DA6B /* WSSharePlugin.h */,
+				55F232C610B6FF7700A3DA6B /* WSBasePlugin.h */,
+				55F232C710B6FF7700A3DA6B /* WSBasePlugin.m */,
+				55F232C810B6FF7700A3DA6B /* WSShareCenter.h */,
+				55F232C910B6FF7700A3DA6B /* WSShareCenter.m */,
+			);
+			name = WeShare;
+			path = ../src/WeShare;
+			sourceTree = SOURCE_ROOT;
+		};
+		55F232E910B6FFA100A3DA6B /* WeShare-Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				55F232EA10B6FFA100A3DA6B /* Email */,
+				55F232ED10B6FFA100A3DA6B /* Delicious */,
+				55F232F510B6FFA100A3DA6B /* Facebook */,
+				55F2330F10B6FFA100A3DA6B /* Twitter */,
+			);
+			name = "WeShare-Plugins";
+			path = ../src/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		55F232EA10B6FFA100A3DA6B /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				55F232EB10B6FFA100A3DA6B /* WSEmailPlugin.h */,
+				55F232EC10B6FFA100A3DA6B /* WSEmailPlugin.m */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		55F232ED10B6FFA100A3DA6B /* Delicious */ = {
+			isa = PBXGroup;
+			children = (
+				552F694710D15A26002143D0 /* UserAuthViewController.h */,
+				552F694810D15A26002143D0 /* UserAuthViewController.m */,
+				552F694910D15A26002143D0 /* UserAuthViewController.xib */,
+				55F232EE10B6FFA100A3DA6B /* WSDeliciousPlugin.h */,
+				55F232EF10B6FFA100A3DA6B /* WSDeliciousPlugin.m */,
+				55F232F010B6FFA100A3DA6B /* WSDeliciousPluginViewController.h */,
+				55F232F110B6FFA100A3DA6B /* WSDeliciousPluginViewController.m */,
+				55F232F210B6FFA100A3DA6B /* WSDeliciousPluginViewController.xib */,
+				552F68C110D143F3002143D0 /* WSDeliciousAPI.h */,
+				552F68C210D143F3002143D0 /* WSDeliciousAPI.m */,
+				552F68DA10D144B5002143D0 /* DeliciousURLRequest.h */,
+				552F68DB10D144B5002143D0 /* DeliciousURLRequest.m */,
+			);
+			path = Delicious;
+			sourceTree = "<group>";
+		};
+		55F232F510B6FFA100A3DA6B /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				55F2330D10B6FFA100A3DA6B /* WSFacebookPlugin.h */,
+				55F2330E10B6FFA100A3DA6B /* WSFacebookPlugin.m */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		55F232F610B6FFA100A3DA6B /* fb-connect-iphone */ = {
+			isa = PBXGroup;
+			children = (
+				55F232F710B6FFA100A3DA6B /* FBConnect.h */,
+				55F232F810B6FFA100A3DA6B /* FBConnectGlobal.h */,
+				55F232F910B6FFA100A3DA6B /* FBConnectGlobal.m */,
+				55F232FA10B6FFA100A3DA6B /* FBSession.h */,
+				55F232FB10B6FFA100A3DA6B /* FBSession.m */,
+				55F232FC10B6FFA100A3DA6B /* FBRequest.h */,
+				55F232FD10B6FFA100A3DA6B /* FBRequest.m */,
+				55F232FE10B6FFA100A3DA6B /* FBXMLHandler.h */,
+				55F232FF10B6FFA100A3DA6B /* FBXMLHandler.m */,
+				55F2330010B6FFA100A3DA6B /* FBLoginButton.h */,
+				55F2330110B6FFA100A3DA6B /* FBLoginButton.m */,
+				55F2330210B6FFA100A3DA6B /* FBDialog.h */,
+				55F2330310B6FFA100A3DA6B /* FBDialog.m */,
+				55F2330410B6FFA100A3DA6B /* FBLoginDialog.h */,
+				55F2330510B6FFA100A3DA6B /* FBLoginDialog.m */,
+				55F2330610B6FFA100A3DA6B /* FBPermissionDialog.h */,
+				55F2330710B6FFA100A3DA6B /* FBPermissionDialog.m */,
+				55F2330810B6FFA100A3DA6B /* FBStreamDialog.h */,
+				55F2330B10B6FFA100A3DA6B /* FBStreamDialog.m */,
+				55F2330C10B6FFA100A3DA6B /* FBConnect.bundle */,
+			);
+			name = "fb-connect-iphone";
+			path = ../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		55F2330F10B6FFA100A3DA6B /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				55F2331410B6FFA200A3DA6B /* WSTwitterPlugin.h */,
+				55F2331510B6FFA200A3DA6B /* WSTwitterPlugin.m */,
+				5578D5A410C93CFE00E06757 /* WSTwitterPluginViewController.h */,
+				5578D5A510C93CFE00E06757 /* WSTwitterPluginViewController.m */,
+				5578D5A610C93CFE00E06757 /* WSTwitterPluginViewController.xib */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		55F4A0A110D7F342006C9649 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */,
+				553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */,
+				551187861100CD1D00BD68EB /* weshare-logo-result.png */,
+				5511875E1100C30D00BD68EB /* weshare-icon-big.png */,
+				55D793D61100BAF300174A17 /* dialog-bg.png */,
+				55D793091100AF3900174A17 /* weshare-logo-medium.png */,
+				55D7930A1100AF3900174A17 /* weshare-logo-small.png */,
+				55F4224311007BC0004AA2A7 /* WeShare.strings */,
+				554C411C10FE1628006101F6 /* line.png */,
+				5589E84B10FB6CE000635893 /* dialog_subtitleBar.png */,
+				5553D73D10F783C6000AC945 /* ico_fail.png */,
+				5553D73E10F783C6000AC945 /* ico_ok.png */,
+				5553D73F10F783C6000AC945 /* neofonie-open.png */,
+				5557DA0710DB925400DD715E /* about-weshare.html */,
+				55F4A0A310D7F342006C9649 /* delicious-icon.png */,
+				55F4A0A410D7F342006C9649 /* facebook-icon.png */,
+				55F4A0A610D7F342006C9649 /* header_bg.png */,
+				55F4A0A710D7F342006C9649 /* mail-icon.png */,
+				55F4A0AB10D7F342006C9649 /* dialog_close.png */,
+				55F4A0AC10D7F342006C9649 /* twitter-icon.png */,
+			);
+			name = Resources;
+			path = ../src/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		96557FF310D0EAC600086829 /* MATwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				9655804210D0ED9C00086829 /* Twitter NSXML Parsers */,
+				9655801F10D0EAC600086829 /* Categories */,
+				96557FFC10D0EAC600086829 /* Twitter LibXML Parsers */,
+				96557FF410D0EAC600086829 /* MGTwitterEngineGlobalHeader.h */,
+				96557FF510D0EAC600086829 /* MGTwitterEngine.h */,
+				96557FF610D0EAC600086829 /* MGTwitterEngine.m */,
+				96557FF710D0EAC600086829 /* MGTwitterEngineDelegate.h */,
+				96557FF810D0EAC600086829 /* MGTwitterHTTPURLConnection.h */,
+				96557FF910D0EAC600086829 /* MGTwitterHTTPURLConnection.m */,
+				96557FFA10D0EAC600086829 /* MGTwitterRequestTypes.h */,
+				96557FFB10D0EAC600086829 /* MGTwitterParserDelegate.h */,
+			);
+			name = MATwitterEngine;
+			path = ../src/Plugins/Twitter;
+			sourceTree = "<group>";
+		};
+		96557FFC10D0EAC600086829 /* Twitter LibXML Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				96557FFD10D0EAC600086829 /* MGTwitterLibXMLParser.h */,
+				96557FFE10D0EAC600086829 /* MGTwitterLibXMLParser.m */,
+				96557FFF10D0EAC600086829 /* MGTwitterStatusesLibXMLParser.h */,
+				9655800010D0EAC600086829 /* MGTwitterStatusesLibXMLParser.m */,
+				9655800110D0EAC600086829 /* MGTwitterUsersLibXMLParser.h */,
+				9655800210D0EAC600086829 /* MGTwitterUsersLibXMLParser.m */,
+				9655800310D0EAC600086829 /* MGTwitterMessagesLibXMLParser.h */,
+				9655800410D0EAC600086829 /* MGTwitterMessagesLibXMLParser.m */,
+				9655800510D0EAC600086829 /* MGTwitterMiscLibXMLParser.h */,
+				9655800610D0EAC600086829 /* MGTwitterMiscLibXMLParser.m */,
+			);
+			name = "Twitter LibXML Parsers";
+			sourceTree = "<group>";
+		};
+		9655801F10D0EAC600086829 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9655802010D0EAC600086829 /* NSString+UUID.h */,
+				9655802110D0EAC600086829 /* NSString+UUID.m */,
+				9655802210D0EAC600086829 /* NSData+Base64.h */,
+				9655802310D0EAC600086829 /* NSData+Base64.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9655804210D0ED9C00086829 /* Twitter NSXML Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				9655804310D0ED9C00086829 /* MGTwitterXMLParser.h */,
+				9655804410D0ED9C00086829 /* MGTwitterXMLParser.m */,
+				9655804510D0ED9C00086829 /* MGTwitterStatusesParser.h */,
+				9655804610D0ED9C00086829 /* MGTwitterStatusesParser.m */,
+				9655804710D0ED9C00086829 /* MGTwitterUsersParser.h */,
+				9655804810D0ED9C00086829 /* MGTwitterUsersParser.m */,
+				9655804910D0ED9C00086829 /* MGTwitterMessagesParser.h */,
+				9655804A10D0ED9C00086829 /* MGTwitterMessagesParser.m */,
+				9655804B10D0ED9C00086829 /* MGTwitterMiscParser.h */,
+				9655804C10D0ED9C00086829 /* MGTwitterMiscParser.m */,
+			);
+			name = "Twitter NSXML Parsers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* WeShareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WeShareDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeShareDemo;
+			productName = WeShareDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* WeShareDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WeShareDemo" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* WeShareDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* WeShareDemoViewController.xib in Resources */,
+				55FCB3D510B1A69500938656 /* WeShareConfig.plist in Resources */,
+				554C3CF310FCBFC8006101F6 /* WSDeliciousPluginViewController.xib in Resources */,
+				55F2332510B6FFA200A3DA6B /* FBConnect.bundle in Resources */,
+				556D3A0010BADCA500D857BB /* WSShareDialog.xib in Resources */,
+				556D3E4410BD597700D857BB /* WSSharePluginDialog.xib in Resources */,
+				554C3D1D10FCC349006101F6 /* WSTwitterPluginViewController.xib in Resources */,
+				552F694B10D15A26002143D0 /* UserAuthViewController.xib in Resources */,
+				55F4A0AE10D7F342006C9649 /* delicious-icon.png in Resources */,
+				55F4A0AF10D7F342006C9649 /* facebook-icon.png in Resources */,
+				55F4A0B110D7F342006C9649 /* header_bg.png in Resources */,
+				55F4A0B210D7F342006C9649 /* mail-icon.png in Resources */,
+				55F4A0B610D7F342006C9649 /* dialog_close.png in Resources */,
+				55F4A0B710D7F342006C9649 /* twitter-icon.png in Resources */,
+				5557DA0810DB925400DD715E /* about-weshare.html in Resources */,
+				551392A010F1FA88002EB8B7 /* oauthAutoConfig.plist in Resources */,
+				5553D74010F783C6000AC945 /* ico_fail.png in Resources */,
+				5553D74110F783C6000AC945 /* ico_ok.png in Resources */,
+				5553D74210F783C6000AC945 /* neofonie-open.png in Resources */,
+				5589E84C10FB6CE000635893 /* dialog_subtitleBar.png in Resources */,
+				554C411D10FE1628006101F6 /* line.png in Resources */,
+				55F4225A11007BC0004AA2A7 /* WeShare.strings in Resources */,
+				55D7930C1100AF3900174A17 /* weshare-logo-medium.png in Resources */,
+				55D7930D1100AF3900174A17 /* weshare-logo-small.png in Resources */,
+				55D793D71100BAF300174A17 /* dialog-bg.png in Resources */,
+				5511875F1100C30D00BD68EB /* weshare-icon-big.png in Resources */,
+				551187871100CD1D00BD68EB /* weshare-logo-result.png in Resources */,
+				553CD7DC11074FAD00F936C3 /* weshare-toolbarIcon-colored.png in Resources */,
+				553CDA3611085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* WeShareDemoAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* WeShareDemoViewController.m in Sources */,
+				55F232CC10B6FF7700A3DA6B /* WSBasePlugin.m in Sources */,
+				55F232CD10B6FF7700A3DA6B /* WSShareCenter.m in Sources */,
+				55F232E810B6FF8300A3DA6B /* UrlRequestOperation.m in Sources */,
+				55F2331610B6FFA200A3DA6B /* WSEmailPlugin.m in Sources */,
+				55F2331710B6FFA200A3DA6B /* WSDeliciousPlugin.m in Sources */,
+				55F2331810B6FFA200A3DA6B /* WSDeliciousPluginViewController.m in Sources */,
+				55F2331B10B6FFA200A3DA6B /* FBConnectGlobal.m in Sources */,
+				55F2331C10B6FFA200A3DA6B /* FBSession.m in Sources */,
+				55F2331D10B6FFA200A3DA6B /* FBRequest.m in Sources */,
+				55F2331E10B6FFA200A3DA6B /* FBXMLHandler.m in Sources */,
+				55F2331F10B6FFA200A3DA6B /* FBLoginButton.m in Sources */,
+				55F2332010B6FFA200A3DA6B /* FBDialog.m in Sources */,
+				55F2332110B6FFA200A3DA6B /* FBLoginDialog.m in Sources */,
+				55F2332210B6FFA200A3DA6B /* FBPermissionDialog.m in Sources */,
+				55F2332410B6FFA200A3DA6B /* FBStreamDialog.m in Sources */,
+				55F2332610B6FFA200A3DA6B /* WSFacebookPlugin.m in Sources */,
+				556D39FF10BADCA500D857BB /* WSShareDialog.m in Sources */,
+				556D3E4310BD597700D857BB /* WSSharePluginDialog.m in Sources */,
+				553983AE10C6773E00E9C0E4 /* UIView+FirstResponderAdditions.m in Sources */,
+				5578D5A710C93CFE00E06757 /* WSTwitterPluginViewController.m in Sources */,
+				5578BC2E10CCFEC300E3ABCF /* WSTwitterPlugin.m in Sources */,
+				55B4130410CD3A300022ADAE /* WSPluginViewController.m in Sources */,
+				9655802410D0EAC600086829 /* MGTwitterEngine.m in Sources */,
+				9655802510D0EAC600086829 /* MGTwitterHTTPURLConnection.m in Sources */,
+				9655802610D0EAC600086829 /* MGTwitterLibXMLParser.m in Sources */,
+				9655802710D0EAC600086829 /* MGTwitterStatusesLibXMLParser.m in Sources */,
+				9655802810D0EAC600086829 /* MGTwitterUsersLibXMLParser.m in Sources */,
+				9655802910D0EAC600086829 /* MGTwitterMessagesLibXMLParser.m in Sources */,
+				9655802A10D0EAC600086829 /* MGTwitterMiscLibXMLParser.m in Sources */,
+				9655803610D0EAC600086829 /* NSString+UUID.m in Sources */,
+				9655803710D0EAC600086829 /* NSData+Base64.m in Sources */,
+				9655804D10D0ED9C00086829 /* MGTwitterXMLParser.m in Sources */,
+				9655804E10D0ED9C00086829 /* MGTwitterStatusesParser.m in Sources */,
+				9655804F10D0ED9C00086829 /* MGTwitterUsersParser.m in Sources */,
+				9655805010D0ED9C00086829 /* MGTwitterMessagesParser.m in Sources */,
+				9655805110D0ED9C00086829 /* MGTwitterMiscParser.m in Sources */,
+				552F68C310D143F3002143D0 /* WSDeliciousAPI.m in Sources */,
+				552F68DC10D144B5002143D0 /* DeliciousURLRequest.m in Sources */,
+				552F694A10D15A26002143D0 /* UserAuthViewController.m in Sources */,
+				5557DACD10DBAC8A00DD715E /* WSDialog.m in Sources */,
+				5513929C10F1FA88002EB8B7 /* MPOAuthAPI.m in Sources */,
+				5513929D10F1FA88002EB8B7 /* MPOAuthAuthenticationMethod.m in Sources */,
+				5513929E10F1FA88002EB8B7 /* MPOAuthAuthenticationMethodOAuth.m in Sources */,
+				5513929F10F1FA88002EB8B7 /* MPOAuthAuthenticationMethodAuthExchange.m in Sources */,
+				551392A110F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m in Sources */,
+				551392A210F1FA88002EB8B7 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m in Sources */,
+				551392A310F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m in Sources */,
+				551392A410F1FA88002EB8B7 /* NSURLResponse+Encoding.m in Sources */,
+				551392A510F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m in Sources */,
+				551392A910F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m in Sources */,
+				551392AA10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m in Sources */,
+				551392AB10F1FA88002EB8B7 /* MPOAuthConnection.m in Sources */,
+				551392AC10F1FA88002EB8B7 /* MPOAuthURLRequest.m in Sources */,
+				551392AD10F1FA88002EB8B7 /* MPOAuthURLResponse.m in Sources */,
+				551392AE10F1FA88002EB8B7 /* MPOAuthSignatureParameter.m in Sources */,
+				551392AF10F1FA88002EB8B7 /* MPURLRequestParameter.m in Sources */,
+				5553D73B10F783AF000AC945 /* NSURL+TinyUrlAdditions.m in Sources */,
+				5553D73C10F783AF000AC945 /* WSSharingResultView.m in Sources */,
+				55C9927D10FE37AC0054758E /* NSString+EmptyAdditions.m in Sources */,
+				96764687110EE7CC00F11F01 /* Base64Transcoder.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55F4224311007BC0004AA2A7 /* WeShare.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55F4224411007BC0004AA2A7 /* English */,
+				55F4224511007BC0004AA2A7 /* German */,
+			);
+			name = WeShare.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeShareDemo_Prefix.pch;
+				INFOPLIST_FILE = "WeShareDemo-Info.plist";
+				PRODUCT_NAME = WeShareDemo;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeShareDemo_Prefix.pch;
+				INFOPLIST_FILE = "WeShareDemo-Info.plist";
+				PRODUCT_NAME = WeShareDemo;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_LIBXML=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"../lib/facebook-iphone-sdk/src",
+					../src/,
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_LIBXML=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../lib/facebook-iphone-sdk/src",
+					../src/,
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WeShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WeShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
