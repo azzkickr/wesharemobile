@@ -50,7 +50,6 @@
 		5553D73C10F783AF000AC945 /* WSSharingResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553D73A10F783AF000AC945 /* WSSharingResultView.m */; };
 		5553D74010F783C6000AC945 /* ico_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5553D73D10F783C6000AC945 /* ico_fail.png */; };
 		5553D74110F783C6000AC945 /* ico_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 5553D73E10F783C6000AC945 /* ico_ok.png */; };
-		5553D74210F783C6000AC945 /* neofonie-open.png in Resources */ = {isa = PBXBuildFile; fileRef = 5553D73F10F783C6000AC945 /* neofonie-open.png */; };
 		5557DA0810DB925400DD715E /* about-weshare.html in Resources */ = {isa = PBXBuildFile; fileRef = 5557DA0710DB925400DD715E /* about-weshare.html */; };
 		5557DACD10DBAC8A00DD715E /* WSDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5557DACC10DBAC8A00DD715E /* WSDialog.m */; };
 		556D39FF10BADCA500D857BB /* WSShareDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 556D39FD10BADCA500D857BB /* WSShareDialog.m */; };
@@ -62,6 +61,7 @@
 		5589E84C10FB6CE000635893 /* dialog_subtitleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5589E84B10FB6CE000635893 /* dialog_subtitleBar.png */; };
 		55B4130410CD3A300022ADAE /* WSPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B4130310CD3A300022ADAE /* WSPluginViewController.m */; };
 		55C9927D10FE37AC0054758E /* NSString+EmptyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */; };
+		55CF1532110F573F00B291C0 /* neofonie-open.gif in Resources */ = {isa = PBXBuildFile; fileRef = 55CF1531110F573F00B291C0 /* neofonie-open.gif */; };
 		55D7930C1100AF3900174A17 /* weshare-logo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D793091100AF3900174A17 /* weshare-logo-medium.png */; };
 		55D7930D1100AF3900174A17 /* weshare-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D7930A1100AF3900174A17 /* weshare-logo-small.png */; };
 		55D793D71100BAF300174A17 /* dialog-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D793D61100BAF300174A17 /* dialog-bg.png */; };
@@ -180,7 +180,6 @@
 		5553D73A10F783AF000AC945 /* WSSharingResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSharingResultView.m; sourceTree = "<group>"; };
 		5553D73D10F783C6000AC945 /* ico_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_fail.png; sourceTree = "<group>"; };
 		5553D73E10F783C6000AC945 /* ico_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_ok.png; sourceTree = "<group>"; };
-		5553D73F10F783C6000AC945 /* neofonie-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neofonie-open.png"; sourceTree = "<group>"; };
 		5557DA0710DB925400DD715E /* about-weshare.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "about-weshare.html"; sourceTree = "<group>"; };
 		5557DACB10DBAC8A00DD715E /* WSDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDialog.h; sourceTree = "<group>"; };
 		5557DACC10DBAC8A00DD715E /* WSDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDialog.m; sourceTree = "<group>"; };
@@ -198,6 +197,7 @@
 		55B4130310CD3A300022ADAE /* WSPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPluginViewController.m; sourceTree = "<group>"; };
 		55C9927B10FE37AC0054758E /* NSString+EmptyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmptyAdditions.h"; sourceTree = "<group>"; };
 		55C9927C10FE37AC0054758E /* NSString+EmptyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmptyAdditions.m"; sourceTree = "<group>"; };
+		55CF1531110F573F00B291C0 /* neofonie-open.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "neofonie-open.gif"; sourceTree = "<group>"; };
 		55D793091100AF3900174A17 /* weshare-logo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-medium.png"; sourceTree = "<group>"; };
 		55D7930A1100AF3900174A17 /* weshare-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weshare-logo-small.png"; sourceTree = "<group>"; };
 		55D793D61100BAF300174A17 /* dialog-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog-bg.png"; sourceTree = "<group>"; };
@@ -607,6 +607,7 @@
 		55F4A0A110D7F342006C9649 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				55CF1531110F573F00B291C0 /* neofonie-open.gif */,
 				553CDA3511085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png */,
 				553CD7DB11074FAD00F936C3 /* weshare-toolbarIcon-colored.png */,
 				551187861100CD1D00BD68EB /* weshare-logo-result.png */,
@@ -619,7 +620,6 @@
 				5589E84B10FB6CE000635893 /* dialog_subtitleBar.png */,
 				5553D73D10F783C6000AC945 /* ico_fail.png */,
 				5553D73E10F783C6000AC945 /* ico_ok.png */,
-				5553D73F10F783C6000AC945 /* neofonie-open.png */,
 				5557DA0710DB925400DD715E /* about-weshare.html */,
 				55F4A0A310D7F342006C9649 /* delicious-icon.png */,
 				55F4A0A410D7F342006C9649 /* facebook-icon.png */,
@@ -757,7 +757,6 @@
 				551392A010F1FA88002EB8B7 /* oauthAutoConfig.plist in Resources */,
 				5553D74010F783C6000AC945 /* ico_fail.png in Resources */,
 				5553D74110F783C6000AC945 /* ico_ok.png in Resources */,
-				5553D74210F783C6000AC945 /* neofonie-open.png in Resources */,
 				5589E84C10FB6CE000635893 /* dialog_subtitleBar.png in Resources */,
 				554C411D10FE1628006101F6 /* line.png in Resources */,
 				55F4225A11007BC0004AA2A7 /* WeShare.strings in Resources */,
@@ -768,6 +767,7 @@
 				551187871100CD1D00BD68EB /* weshare-logo-result.png in Resources */,
 				553CD7DC11074FAD00F936C3 /* weshare-toolbarIcon-colored.png in Resources */,
 				553CDA3611085BE800F936C3 /* weshare-toolbarIcon-colored-highlighted.png in Resources */,
+				55CF1532110F573F00B291C0 /* neofonie-open.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
