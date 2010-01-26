@@ -27,7 +27,6 @@
 		551392A310F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513927F10F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m */; };
 		551392A410F1FA88002EB8B7 /* NSURLResponse+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513928110F1FA88002EB8B7 /* NSURLResponse+Encoding.m */; };
 		551392A510F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513928310F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m */; };
-		551392A610F1FA88002EB8B7 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 5513928510F1FA88002EB8B7 /* Base64Transcoder.c */; };
 		551392A910F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513928D10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m */; };
 		551392AA10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929110F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m */; };
 		551392AB10F1FA88002EB8B7 /* MPOAuthConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513929310F1FA88002EB8B7 /* MPOAuthConnection.m */; };
@@ -82,7 +81,6 @@
 		55F2332010B6FFA200A3DA6B /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330310B6FFA100A3DA6B /* FBDialog.m */; };
 		55F2332110B6FFA200A3DA6B /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330510B6FFA100A3DA6B /* FBLoginDialog.m */; };
 		55F2332210B6FFA200A3DA6B /* FBPermissionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330710B6FFA100A3DA6B /* FBPermissionDialog.m */; };
-		55F2332310B6FFA200A3DA6B /* FBFeedDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330A10B6FFA100A3DA6B /* FBFeedDialog.m */; };
 		55F2332410B6FFA200A3DA6B /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330B10B6FFA100A3DA6B /* FBStreamDialog.m */; };
 		55F2332510B6FFA200A3DA6B /* FBConnect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55F2330C10B6FFA100A3DA6B /* FBConnect.bundle */; };
 		55F2332610B6FFA200A3DA6B /* WSFacebookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F2330E10B6FFA100A3DA6B /* WSFacebookPlugin.m */; };
@@ -108,6 +106,7 @@
 		9655804F10D0ED9C00086829 /* MGTwitterUsersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804810D0ED9C00086829 /* MGTwitterUsersParser.m */; };
 		9655805010D0ED9C00086829 /* MGTwitterMessagesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804A10D0ED9C00086829 /* MGTwitterMessagesParser.m */; };
 		9655805110D0ED9C00086829 /* MGTwitterMiscParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655804C10D0ED9C00086829 /* MGTwitterMiscParser.m */; };
+		96764687110EE7CC00F11F01 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 96764685110EE7CC00F11F01 /* Base64Transcoder.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,8 +144,6 @@
 		5513928110F1FA88002EB8B7 /* NSURLResponse+Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLResponse+Encoding.m"; sourceTree = "<group>"; };
 		5513928210F1FA88002EB8B7 /* NSString+URLEscapingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscapingAdditions.h"; sourceTree = "<group>"; };
 		5513928310F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscapingAdditions.m"; sourceTree = "<group>"; };
-		5513928510F1FA88002EB8B7 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
-		5513928610F1FA88002EB8B7 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
 		5513928C10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAPIRequestLoader.h; sourceTree = "<group>"; };
 		5513928D10F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAPIRequestLoader.m; sourceTree = "<group>"; };
 		5513928E10F1FA88002EB8B7 /* MPOAuthCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthCredentialStore.h; sourceTree = "<group>"; };
@@ -240,8 +237,6 @@
 		55F2330610B6FFA100A3DA6B /* FBPermissionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBPermissionDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBPermissionDialog.h"; sourceTree = SOURCE_ROOT; };
 		55F2330710B6FFA100A3DA6B /* FBPermissionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBPermissionDialog.m; path = "../lib/facebook-iphone-sdk/src/FBPermissionDialog.m"; sourceTree = SOURCE_ROOT; };
 		55F2330810B6FFA100A3DA6B /* FBStreamDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBStreamDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBStreamDialog.h"; sourceTree = SOURCE_ROOT; };
-		55F2330910B6FFA100A3DA6B /* FBFeedDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBFeedDialog.h; path = "../lib/facebook-iphone-sdk/src/FBConnect/FBFeedDialog.h"; sourceTree = SOURCE_ROOT; };
-		55F2330A10B6FFA100A3DA6B /* FBFeedDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBFeedDialog.m; path = "../lib/facebook-iphone-sdk/src/FBFeedDialog.m"; sourceTree = SOURCE_ROOT; };
 		55F2330B10B6FFA100A3DA6B /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBStreamDialog.m; path = "../lib/facebook-iphone-sdk/src/FBStreamDialog.m"; sourceTree = SOURCE_ROOT; };
 		55F2330C10B6FFA100A3DA6B /* FBConnect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBConnect.bundle; path = "../lib/facebook-iphone-sdk/src/FBConnect.bundle"; sourceTree = SOURCE_ROOT; };
 		55F2330D10B6FFA100A3DA6B /* WSFacebookPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFacebookPlugin.h; sourceTree = "<group>"; };
@@ -290,6 +285,8 @@
 		9655804A10D0ED9C00086829 /* MGTwitterMessagesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMessagesParser.m; path = ../lib/MGTwitterEngine/MGTwitterMessagesParser.m; sourceTree = SOURCE_ROOT; };
 		9655804B10D0ED9C00086829 /* MGTwitterMiscParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMiscParser.h; path = ../lib/MGTwitterEngine/MGTwitterMiscParser.h; sourceTree = SOURCE_ROOT; };
 		9655804C10D0ED9C00086829 /* MGTwitterMiscParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMiscParser.m; path = ../lib/MGTwitterEngine/MGTwitterMiscParser.m; sourceTree = SOURCE_ROOT; };
+		96764685110EE7CC00F11F01 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		96764686110EE7CC00F11F01 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,8 +410,8 @@
 		5513928410F1FA88002EB8B7 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				5513928510F1FA88002EB8B7 /* Base64Transcoder.c */,
-				5513928610F1FA88002EB8B7 /* Base64Transcoder.h */,
+				96764685110EE7CC00F11F01 /* Base64Transcoder.c */,
+				96764686110EE7CC00F11F01 /* Base64Transcoder.h */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -588,8 +585,6 @@
 				55F2330610B6FFA100A3DA6B /* FBPermissionDialog.h */,
 				55F2330710B6FFA100A3DA6B /* FBPermissionDialog.m */,
 				55F2330810B6FFA100A3DA6B /* FBStreamDialog.h */,
-				55F2330910B6FFA100A3DA6B /* FBFeedDialog.h */,
-				55F2330A10B6FFA100A3DA6B /* FBFeedDialog.m */,
 				55F2330B10B6FFA100A3DA6B /* FBStreamDialog.m */,
 				55F2330C10B6FFA100A3DA6B /* FBConnect.bundle */,
 			);
@@ -800,7 +795,6 @@
 				55F2332010B6FFA200A3DA6B /* FBDialog.m in Sources */,
 				55F2332110B6FFA200A3DA6B /* FBLoginDialog.m in Sources */,
 				55F2332210B6FFA200A3DA6B /* FBPermissionDialog.m in Sources */,
-				55F2332310B6FFA200A3DA6B /* FBFeedDialog.m in Sources */,
 				55F2332410B6FFA200A3DA6B /* FBStreamDialog.m in Sources */,
 				55F2332610B6FFA200A3DA6B /* WSFacebookPlugin.m in Sources */,
 				556D39FF10BADCA500D857BB /* WSShareDialog.m in Sources */,
@@ -836,7 +830,6 @@
 				551392A310F1FA88002EB8B7 /* NSURL+MPURLParameterAdditions.m in Sources */,
 				551392A410F1FA88002EB8B7 /* NSURLResponse+Encoding.m in Sources */,
 				551392A510F1FA88002EB8B7 /* NSString+URLEscapingAdditions.m in Sources */,
-				551392A610F1FA88002EB8B7 /* Base64Transcoder.c in Sources */,
 				551392A910F1FA88002EB8B7 /* MPOAuthAPIRequestLoader.m in Sources */,
 				551392AA10F1FA88002EB8B7 /* MPOAuthCredentialConcreteStore.m in Sources */,
 				551392AB10F1FA88002EB8B7 /* MPOAuthConnection.m in Sources */,
@@ -847,6 +840,7 @@
 				5553D73B10F783AF000AC945 /* NSURL+TinyUrlAdditions.m in Sources */,
 				5553D73C10F783AF000AC945 /* WSSharingResultView.m in Sources */,
 				55C9927D10FE37AC0054758E /* NSString+EmptyAdditions.m in Sources */,
+				96764687110EE7CC00F11F01 /* Base64Transcoder.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,6 +891,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_LIBXML=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -919,6 +914,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_LIBXML=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (

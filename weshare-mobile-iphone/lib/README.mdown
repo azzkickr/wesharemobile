@@ -2,21 +2,30 @@
 
 This directory should contain the 3rd-party libraries that the plug-ins of WeShare use.
 
-* Delicious-Plugin:
-   * **mpoauthconneciton**: an open source library for connecting to OAuth-secured webservices. See [http://code.google.com/p/mpoauthconnection/]() for the project and [http://delicious.com/help/oauthapi]() for the API.
+## Delicious-Plugin
 
-**Important**: Please checkout to a folder called `mpoauthconnection` like this:
+**mpoauthconneciton**: an open source library for connecting to OAuth-secured webservices. See [http://code.google.com/p/mpoauthconnection/]() for the project and [http://delicious.com/help/oauthapi]() for the API.
+
+Download: **Important**: Please checkout to a folder called `mpoauthconnection`:
 
 	svn checkout http://mpoauthconnection.googlecode.com/svn/trunk/ mpoauthconnection
 
-* Twitter-Plugin:
-   * **MGTwitterEngine**: Matt Gemmels framework for connecting to Twitter's webservice. Sourcecode available at [http://svn.cocoasourcecode.com/MGTwitterEngine/]().
+## Twitter-Plugin
 
-For MGTwitterEngine: make sure you set it to use libxml:
+**MGTwitterEngine**: Matt Gemmel's framework for connecting to Twitter's webservice. Sourcecode available at [http://svn.cocoasourcecode.com/MGTwitterEngine/]().
 
-	// In MGTwitterEngine.m at the top
+Download:
+
+    svn checkout http://svn.cocoasourcecode.com/MGTwitterEngine/
+
+For MGTwitterEngine: make sure you set it to use `libxml`: Go to your Target or Project settings, and add the following setting to the entry "Preprocessor Macros":
 	
-	#define USE_LIBXML 1
+	USE_LIBXML=1
 	
-* Facebook-Plugin:
-   * **Facebook Connect for iPhone**: Framework to connect to facebook; [http://wiki.developers.facebook.com/index.php/Facebook_Connect_for_iPhone]()
+## Facebook-Plugin
+
+**Facebook Connect for iPhone**: Framework to connect to facebook; [http://wiki.developers.facebook.com/index.php/Facebook_Connect_for_iPhone]()
+
+Download:
+
+    git clone git://github.com/facebook/facebook-iphone-sdk.git

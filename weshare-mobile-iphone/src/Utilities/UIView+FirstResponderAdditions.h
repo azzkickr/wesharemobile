@@ -27,9 +27,9 @@
  (neofonie Commercial Source Code License Version 1.0, NCSL v1.0) includes the 
  assurances that distributors typically find in commercial distribution agreements.
  
- Created by Reiner Pittinger on 02.12.09.
- 
  */
+
+// Created by Reiner Pittinger on 02.12.09.
 
 // Based on the solution by Anthony D at http://stackoverflow.com/questions/949806/is-there-a-way-to-detect-what-uiview-is-currently-visible
 

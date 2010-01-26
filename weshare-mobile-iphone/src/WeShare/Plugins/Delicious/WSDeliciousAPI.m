@@ -20,9 +20,9 @@
  
  You may obtain a commercial licence to use this library in non-GPL projects. Please contact open@neofonie.de for further information and assistance.
  
- Created by reiner on 10.12.09.
- 
  */
+
+// Created by reiner on 10.12.09.
 
 #import "WSDeliciousAPI.h"
 #import "MPOAuthAPIRequestLoader.h"

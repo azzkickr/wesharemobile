@@ -20,9 +20,9 @@
  
  You may obtain a commercial licence to use this library in non-GPL projects. Please contact open@neofonie.de for further information and assistance. 
  
- Author: Reiner Pittinger <reiner.pittinger@neofonie.de>, <DATE: 2009-08-11>
- 
  */
+
+// Created by Pittinger <reiner.pittinger@neofonie.de>, <DATE: 2009-08-11>
 
 #import "WeShareGlobal.h"
 #import "WSTwitterPlugin.h"

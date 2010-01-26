@@ -28,9 +28,9 @@
  assurances that distributors typically find in commercial distribution agreements.
  
  
- Created by Reiner Pittinger on 02.12.09.
- 
  */
+
+// Created by Reiner Pittinger on 02.12.09.
 
 #import <UIKit/UIKit.h>
 

@@ -28,9 +28,9 @@
  assurances that distributors typically find in commercial distribution agreements.
  
  
- Author: Reiner Pittinger <reiner.pittinger@neofonie.de>, <DATE: 2009-12-11>
- 
  */
+
+// Created by Pittinger <reiner.pittinger@neofonie.de>, <DATE: 2009-12-11>
 
 #import "UserAuthViewController.h"
 #import "WeShareGlobal.h"

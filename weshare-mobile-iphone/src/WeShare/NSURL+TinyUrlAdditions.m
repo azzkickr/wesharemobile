@@ -27,9 +27,9 @@
  (neofonie Commercial Source Code License Version 1.0, NCSL v1.0) includes the 
  assurances that distributors typically find in commercial distribution agreements.
  
- Created by Reiner Pittinger <reiner.pittinger@neofonie.de> on 07.01.10.
- 
  */
+
+// Created by Reiner Pittinger <reiner.pittinger@neofonie.de> on 07.01.10.
 
 #import "NSURL+TinyUrlAdditions.h"
 
