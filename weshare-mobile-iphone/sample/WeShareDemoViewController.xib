@@ -206,7 +206,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="292200714">
 								<reference key="IBUINavigationBar" ref="976450751"/>
-								<string key="IBUITitle">WeShare</string>
+								<string key="IBUITitle">WeShare Demo</string>
 							</object>
 						</object>
 					</object>
@@ -340,8 +340,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="466743797"/>
-							<reference ref="976450751"/>
 							<reference ref="101815249"/>
+							<reference ref="976450751"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -463,7 +463,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{503, 411}, {320, 480}}</string>
+					<string>{{553, 411}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
