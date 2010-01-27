@@ -233,7 +233,7 @@
 						<reference key="NSSuperview" ref="157476611"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<int key="IBUIContentMode">4</int>
+						<int key="IBUIContentMode">9</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
@@ -687,10 +687,31 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">NSObject+AppDelegateExtensions.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIButton</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/UIButton+ButtonFactory.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">UIView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../src/Utilities/UIView+FirstResponderAdditions.h</string>
+						<string key="minorKey">../../components/WeShare/weshare-mobile-iphone/src/Utilities/UIView+FirstResponderAdditions.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIViewController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/UIViewController+ActivityView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -719,7 +740,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../src/WeShare/WSDialog.h</string>
+						<string key="minorKey">../../components/WeShare/weshare-mobile-iphone/src/WeShare/WSDialog.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -759,7 +780,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../src/WeShare/WSSharePluginDialog.h</string>
+						<string key="minorKey">../../components/WeShare/weshare-mobile-iphone/src/WeShare/WSSharePluginDialog.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -782,7 +803,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../src/WeShare/WSSharingResultView.h</string>
+						<string key="minorKey">../../components/WeShare/weshare-mobile-iphone/src/WeShare/WSSharingResultView.h</string>
 					</object>
 				</object>
 			</object>
