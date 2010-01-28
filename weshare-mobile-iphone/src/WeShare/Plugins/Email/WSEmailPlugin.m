@@ -95,6 +95,7 @@
 			notificationName = kWSSharingSuccessfulNotification;
 			break;
 		case MFMailComposeResultCancelled:
+			notificationName = kWSSharingCancelledNotification;
 			[[NSNotificationCenter defaultCenter] postNotificationName: notificationName object: self];
 			[pluginDialog dismiss];
 			return;
