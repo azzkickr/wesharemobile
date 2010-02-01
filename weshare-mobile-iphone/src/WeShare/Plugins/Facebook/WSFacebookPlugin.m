@@ -118,8 +118,6 @@
 	
 	NSMutableArray* actualParameters = [[NSMutableArray alloc] init];
 	
-	BOOL descriptionSet = NO;
-	
 	for (NSString* key in [streamParamsDict allKeys]) {
 		NSString* value = [self.dataDict objectForKey: key];
 		
@@ -131,20 +129,10 @@
 				value = [NSString stringWithFormat: @"[{\"type\":\"image\",\"src\":\"%@\",\"href\":\"%@\"}]", value, href];
 				
 				[actualParameters addObject: [NSString stringWithFormat: @"\"%@\":%@", streamKey, value]];
-			} else {
-				// WeShare self promotion
-				if ([streamKey isEqualToString: @"description"]) {
-					value = [NSString stringWithFormat: @"%@ (%@)", value, WSLocalizedString(@"Shared through WeShare", nil)];
-					descriptionSet = YES;
-				}
-				
+			} else {				
 				[actualParameters addObject: [NSString stringWithFormat: @"\"%@\":\"%@\"", streamKey, value]];
 			}
 		}
-	}
-	
-	if (!descriptionSet) {
-		[actualParameters addObject: [NSString stringWithFormat: @"\"%@\":\"%@\"", @"description", WSLocalizedString(@"Shared through WeShare", nil)]];
 	}
 	
 	NSString* parameterString = [actualParameters componentsJoinedByString: @","];
