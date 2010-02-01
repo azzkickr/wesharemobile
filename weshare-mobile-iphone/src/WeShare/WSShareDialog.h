@@ -47,6 +47,7 @@
 	IBOutlet UIWebView* aboutWebView;
 	
 	IBOutlet UILabel* dialogSubtitle;
+	IBOutlet UILabel* aboutDialogSubtitle;
 	
 	NSString* tableHeader;
 	IBOutlet UILabel* tableHeaderLabel;

@@ -99,6 +99,7 @@
 	if (self.modalViewController) {
 		[self dismissModalViewControllerAnimated: YES];
 	} else {
+		aboutDialogSubtitle.text = [NSString stringWithFormat: @"WeShare Mobile for iPhone, Version %@", WESHARE_VERSION];
 		[self presentModalViewController: infoViewController animated: YES];
 	}
 }

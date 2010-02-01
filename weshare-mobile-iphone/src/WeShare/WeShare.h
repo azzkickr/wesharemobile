@@ -39,6 +39,8 @@
 
 #import "WSShareCenter.h"
 
+#define WESHARE_VERSION @"1.0.1"
+
 // Dicitonary keys for typical data values
 #define kWSTitleDataDictKey @"title"
 #define kWSUrlDataDictKey @"url"
