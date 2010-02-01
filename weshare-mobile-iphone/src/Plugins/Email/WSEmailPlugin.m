@@ -58,7 +58,7 @@
 	NSString* subject = [data valueForKey: kWSEMailSubjectDataDictKey];
 	NSString* messageBody = [data valueForKey: KWSEMailMessageDictKey];
 	
-	NSString* smSignature = WSLocalizedString(@"Sent using WeShare", @"WeShare E-Mail signature");
+	NSString* smSignature = [NSString stringWithFormat: @"<br/><br/>%@ <a href='http://open.neofonie.de/seite/projekte'>WeShare</a>", WSLocalizedString(@"Sent using WeShare", nil)];
 	
 	if (!messageBody) {
 		messageBody = smSignature;
@@ -72,8 +72,7 @@
 	
 	[mailController setSubject: subject];
 	
-	BOOL isHTML = [[data objectForKey: @"isHTML"] boolValue];
-	[mailController setMessageBody: messageBody isHTML: isHTML];		
+	[mailController setMessageBody: messageBody isHTML: YES];		
 	
 	pluginDialog = [[WSSharePluginDialog alloc] init];
 	

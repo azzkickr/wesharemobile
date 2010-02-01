@@ -82,7 +82,8 @@
 	 this value will be ignored (as nil terminates the list of objects and keys).
 	 */ 
 	return [NSDictionary dictionaryWithObjectsAndKeys: 
-			titleField.text, kWSTitleDataDictKey, 
+			titleField.text, kWSTitleDataDictKey,
+			titleField.text, kWSEMailSubjectDataDictKey,
 			messageView.text, kWSMessageDataDictKey, 
 			messageView.text, KWSEMailMessageDictKey,
 			[NSURL URLWithString: urlField.text], kWSUrlDataDictKey, nil];
