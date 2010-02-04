@@ -35,7 +35,7 @@
 #import "WeShareGlobal.h"
 #import "FBConnect/FBConnect.h"
 
-@interface WSFacebookPlugin : WSBasePlugin <FBSessionDelegate, FBDialogDelegate> {
+@interface WSFacebookPlugin : WSBasePlugin <FBSessionDelegate, FBDialogDelegate, WSDialogDelegate> {
 	
 	FBSession* facebookSession;
 	
