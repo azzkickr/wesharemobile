@@ -49,15 +49,18 @@
 @property (nonatomic, retain) id<WSDialogDelegate> delegate;
 
 /*
- Displays the dialog in the given view.
+ Displays the dialog in the given view and <b>animating it</b>.
  */
 - (void)showInView:(UIView*)hostView;
+
+- (void)showInView:(UIView*)hostView animated:(BOOL)animate;
 
 /*
  Dismisses the dialog.
  */
 - (IBAction)dismiss;
 
+@protected
 - (void)dismissAnimationStopped;
 
 @end
@@ -67,7 +70,7 @@
 @optional
 
 /*
- Informs the delegate that this dialog has been closed.
+ Informs the delegate that the given dialog has been closed and animated out of the host view.
  */
 - (void)didDismissDialog:(WSDialog*)dialog;
 

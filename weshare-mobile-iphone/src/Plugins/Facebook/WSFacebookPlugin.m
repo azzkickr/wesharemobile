@@ -36,6 +36,11 @@
 #import "WSFacebookPlugin.h"
 #import "FBConnect/FBConnect.h"
 
+/*
+ Taken from Facebook SDK/FBDialog.m
+ */
+#define kFacebookDialogTransitionDuration 0.3;
+
 @interface WSFacebookPlugin ()
 
 - (void)createSession;
@@ -82,6 +87,7 @@
 - (void)shareData:(NSDictionary*)data hostViewController:(UIViewController*)viewController
 {
 	self.dataDict = [NSMutableDictionary dictionaryWithDictionary: data];
+	self.hostViewController = viewController;
 	if (![facebookSession isConnected]) {
 		// The user has to login first
 		FBLoginDialog* dialog = [[[FBLoginDialog alloc] initWithSession: facebookSession] autorelease];
@@ -166,6 +172,17 @@
 		[self showStreamDialog];
 	}
 	if ([dialog isKindOfClass: [FBStreamDialog class]]) {
+		/*
+		 Show the result screen manually.
+		 
+		 We release the pluginDialog in the delegate callback method (didDismissDialog:)
+		*/
+		WSSharePluginDialog* pluginDialog = [[WSSharePluginDialog alloc] init];
+		pluginDialog.pluginView = [[[UIView alloc] init] autorelease];
+		pluginDialog.delegate = self;
+		pluginDialog.title = @"Share with Facebook";
+		[pluginDialog showInView: self.hostViewController.view animated: NO];
+		
 		[[NSNotificationCenter defaultCenter] postNotificationName: kWSSharingSuccessfulNotification object: self];
 	}
 }
@@ -180,6 +197,13 @@
 {
 	facebookSession = [session retain];
 	NSLog(@"User with id %lld logged in.", uid);
+}
+
+#pragma mark WSDialogDelegate
+
+- (void)didDismissDialog:(WSDialog*)dialog
+{
+	[dialog release];
 }
 
 @end

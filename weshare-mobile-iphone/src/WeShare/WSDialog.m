@@ -48,6 +48,11 @@
 
 - (void)showInView:(UIView*)hostView
 {
+	[self showInView: hostView animated: YES];
+}
+
+- (void)showInView:(UIView *)hostView animated:(BOOL)animate
+{
 	UIWindow* window = [UIApplication sharedApplication].keyWindow;
 	if (!window) {
 		window = [[UIApplication sharedApplication].windows objectAtIndex:0];
@@ -60,29 +65,35 @@
 	if (isShareDialog) {
 		backgroundView = [[UIView alloc] initWithFrame: viewFrame];
 		backgroundView.backgroundColor = [UIColor colorWithWhite: 0.2 alpha: 0.6];
-		backgroundView.alpha = 0;
+		backgroundView.alpha = animate ? 0 : 1;
 		
 		[window addSubview: backgroundView];
 		
-		[UIView beginAnimations:nil context:nil];
-		[UIView setAnimationDuration: kWSTransitionDuration/1.5];
-		backgroundView.alpha = 1;
-		[UIView commitAnimations];
+		if (animate) {
+			[UIView beginAnimations:nil context:nil];
+			[UIView setAnimationDuration: kWSTransitionDuration/1.5];
+			backgroundView.alpha = 1;
+			[UIView commitAnimations];
+		}
 	}
 	
 	self.view.frame = viewFrame;
 	[window addSubview: self.view];
 	
-	self.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
-	// Make sure the layer is visible
-	self.view.alpha = 1;
-	
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration: kWSTransitionDuration/1.5];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDidStopSelector:@selector(bounce1AnimationStopped)];
-	self.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.1, 1.1);
-	[UIView commitAnimations];
+	if (animate) {
+		self.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
+		// Make sure the layer is visible
+		self.view.alpha = 1;
+		
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration: kWSTransitionDuration/1.5];
+		[UIView setAnimationDelegate:self];
+		[UIView setAnimationDidStopSelector:@selector(bounce1AnimationStopped)];
+		self.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.1, 1.1);
+		[UIView commitAnimations];
+	} else {
+		self.view.alpha = 1;
+	}
 	
 	[WSShareCenter sharedCenter].dialogCount++;
 }
