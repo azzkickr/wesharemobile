@@ -60,7 +60,6 @@
  */
 - (IBAction)dismiss;
 
-@protected
 - (void)dismissAnimationStopped;
 
 @end
