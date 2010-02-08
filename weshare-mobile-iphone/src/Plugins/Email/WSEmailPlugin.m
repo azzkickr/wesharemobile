@@ -56,14 +56,20 @@
 {	
 	self.hostViewController = viewController;
 	NSString* subject = [data valueForKey: kWSEMailSubjectDataDictKey];
-	NSString* messageBody = [data valueForKey: KWSEMailMessageDictKey];
+	NSMutableString* messageBody = [NSMutableString stringWithString: [data valueForKey: KWSEMailMessageDictKey]];
 	
-	NSString* smSignature = [NSString stringWithFormat: @"<br/><br/>%@ <a href='http://open.neofonie.de/seite/projekte'>WeShare</a>", WSLocalizedString(@"Sent using WeShare", nil)];
+	// Convert newline characters to HTML tags
+	[messageBody replaceOccurrencesOfString: @"\n" 
+								 withString: @"<br/>" 
+									options: NSCaseInsensitiveSearch 
+									  range: NSMakeRange(0, [messageBody length])];
+	
+	NSString* wsSignature = [NSString stringWithFormat: @"%@ <a href='http://open.neofonie.de/seite/projekte'>WeShare</a>", WSLocalizedString(@"Sent using WeShare", nil)];
 	
 	if (!messageBody) {
-		messageBody = smSignature;
+		[messageBody appendString: wsSignature];
 	} else {
-		messageBody = [NSString stringWithFormat: @"%@\n\n%@", messageBody, smSignature];
+		[messageBody appendFormat: @"<br/><br/>%@", wsSignature];
 	}
 	
 	// Show the In-App E-Mail Dialog
