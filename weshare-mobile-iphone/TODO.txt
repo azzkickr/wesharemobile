@@ -1,0 +1,1 @@
+* Better initialization of plugin-dialog: make pluginViewController parameter to init of plugin dialog, send events of dismiss and comit always to the pluginViewController.
