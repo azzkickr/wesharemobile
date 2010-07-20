@@ -1,0 +1,5 @@
+2010-01-19 Refactored handling of fullscreen plugin views
+2010-01-19 Updated conceptual diagram
+2010-01-18 pittinger Added better checking of inputs to Delicious and Twitter plugin
+---	
+2010-01-15 pittinger Version 1.0
