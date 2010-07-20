@@ -217,8 +217,14 @@
 
 - (void)insertText:(NSString *)theText
 {
-	messageView.text = [messageView.text stringByReplacingCharactersInRange: messageView.selectedRange
-																 withString: theText];
+	NSRange selectedRange = messageView.selectedRange;
+	if (selectedRange.location != NSNotFound) {
+		messageView.text = [messageView.text stringByReplacingCharactersInRange: selectedRange
+																	 withString: theText];
+	} else {
+		// Just prepend the text
+		messageView.text = [NSString stringWithFormat: @"%@ %@", theText, messageView.text];
+	}
 }
 
 @end
