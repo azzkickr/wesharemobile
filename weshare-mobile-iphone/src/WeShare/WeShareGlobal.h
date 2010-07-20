@@ -39,7 +39,9 @@
 	// ZNLog by Tony Arnold for nicer console outputs: see http://tonyarnold.com/code-snippets/znlog/
 	#import "ZNLog.h"
 #else
-	#define ZNLog(s,...) NSLog(s,##__VA_ARGS__)
+	#ifndef ZNLog
+		#define ZNLog(s,...) NSLog(s,##__VA_ARGS__)
+	#endif
 #endif
 
 #import "WeShare.h"
